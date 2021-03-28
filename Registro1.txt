@@ -1,1 +1,1 @@
-{'Cedula': 5712, 'Contraseña': 12345, 'Tipo': 'Admin'}
+{'Cedula': 5712, 'Contrasenia': '12345', 'Tipo': 'Admin'}
