@@ -22,7 +22,7 @@ def mini_Menu ():
             break
         elif opciones == 2:
             print("Bienvenido, aqui podra registrase o iniciar sesion")
-            # menu_clientes()
+            inputCreateUser()
             break
         else:
             print("!Que tenga un lindo dia¡")
