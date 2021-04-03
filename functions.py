@@ -1,5 +1,7 @@
 import sqlite3 as sql
 
+adminRole = 'admin'
+
 db = sql.connect('buses_system.db')
 
 def inputLogin():
@@ -16,7 +18,11 @@ def verifyUserRole(cedula,password):
     cur.execute(query, (cedula,password))
     result = cur.fetchone()
     db.commit()
-    print('[DEBUG][check] result:',result)
-    return result
+    print(result[0])
+    print(type(result[0]))
+    if result[0] == adminRole:
+        print("SOY ADMIN")
+    else:
+        print("SOY PASAJERO")
 
 
