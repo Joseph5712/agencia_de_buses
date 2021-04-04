@@ -35,7 +35,7 @@ createTable()
 db = sql.connect('buses_system.db')
 
 usuario = (
-    (1,'1301301301','Luis Auz','luisauz@gmail.com','13-02-1998','masculino','12345','admin')
+    (1,'1301301301','Luis Auz','luisauz@gmail.com','14-02-1996','masculino','12345','admin')
 )
 
 with db:
@@ -43,8 +43,25 @@ with db:
     cur.execute('INSERT INTO users VALUES (?,?,?,?,?,?,?,?)', usuario)
     print("USERS Created")
     db.commit()
-    db.close()
+    # db.close()
 
 # TODO
 # executemany -> Insert many data
+
+def createTableTerminales():
+    try:
+        db = sql.connect('buses_system.db')
+        cur = db.cursor()
+        cur.execute('''CREATE TABLE TERMINALES
+                        (id integer primary key AUTOINCREMENT,
+                        nombre text not null,
+                        lugar text,
+                        numero_terminal integer not null
+                        )''')
+        db.commit()
+        db.close()
+    except:
+        print("Failed to create terminales table")
+
+createTableTerminales()
 
