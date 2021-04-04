@@ -1,0 +1,33 @@
+[
+    {
+        "cedula": 5712,
+        "nombre": "Joseph",
+        "email": "jmm7gameover@gmail.com",
+        "fecha_nacimiento": {
+            "dia": 13,
+            "mes": 3,
+            "anio": 1995
+        },
+        "genero": "Masculino",
+        "contrasenia": "12345",
+        "admin": false
+    },
+    {
+        "cedula": 5712,
+        "nombre": "Luis",
+        "email": "luisgameover@gmail.com",
+        "fecha_nacimiento": {
+            "dia": 18,
+            "mes": 4,
+            "anio": 1997
+        },
+        "genero": "Masculino",
+        "contrasenia": "12345",
+        "admin": false
+    },
+    {
+        "cedula": 1515,
+        "contrasenia": "12345",
+        "admin": true
+    }
+]
