@@ -6,10 +6,6 @@ adminRole = 'admin'
 db = sql.connect('buses_system.db')
 
 def inputLogin():
-    print("Porfavor ingrese su cedula correctamente")
-    cedula = input("Cedula:")
-    print("Porfavor ingrese su contraseña")
-    password = input("Password:")
     while True:
         print("Porfavor ingrese su cedula correctamente")
         cedula = input("Cedula:")
@@ -31,6 +27,7 @@ def verifyUserRole(cedula,password):
     db.commit()
     if result[0] == adminRole:
         print("SOY ADMIN")
+        menuAdmin()
     else:
         print("SOY PASAJERO")
 
@@ -92,8 +89,78 @@ def menuAdmin():
     print('5. SALIR')
     while True:
         option = int(input("Ingrese una opción 1 - 2 - 3 - 4 - 5"))
-        if option>0 && option <=5:
+        if option>0 & option <=5:
             break
+    if option == 1:
+        mantTerminales()
 
-# def mantTerminales():
+def mantTerminales():
+    print('=====================')
+    print("ELEGIR UNA OPCION")
+    print('=====================')
+    print('1. CREAR TERMINAL')
+    print('2. CONSULTAR LISTA DE TERMINALES')
+    print('3. MODIFICAR TERMINAL')
+    print('4. ELIMINAR TERMINAL')
+    print('5. SALIR')
+    while True:
+        option = int(input("Ingrese una opción 1 - 2 - 3 - 4 - 5"))
+        if option>0 & option <=5:
+            break
+    if option == 1:
+        nombreTerminal = input("Ingrese el nombre de la terminal")
+        lugar = choiceLugar()
+        createTerminal(nombreTerminal,lugar)
 
+def createTerminal(nombre,lugar):
+    cur = db.cursor()
+    verification = verifyCantTerminalByLugar(lugar)
+    print(verification)
+    if verification == 0:
+        query = 'INSERT INTO TERMINALES (nombre,lugar,numero_terminal) VALUES(?,?,?)'
+        cur.execute(query,(nombre,lugar,1))
+    elif verification ==1:
+        query = 'INSERT INTO TERMINALES (nombre,lugar,numero_terminal) VALUES(?,?,?)'
+        cur.execute(query,(nombre,lugar,2))
+    elif verification>=2:
+        print("No se puede ingresar porque ya existen dos terminales en "+lugar)
+    db.commit()
+
+lugares = ["San José","Alajuela","Heredia","Cartago","San Carlos","Puntarenas","Limón"]
+
+def choiceLugar():
+    print("ELIGA UNA OPCION DE LUGAR")
+    print("=========================")
+    print("1."+lugares[0])
+    print("2."+lugares[1])
+    print("3."+lugares[2])
+    print("4."+lugares[3])
+    print("5."+lugares[4])
+    print("6."+lugares[5])
+    print("7."+lugares[6])
+    while True:
+        choice = int(input("Ingrese una opción 1 - 2 - 3 - 4 - 5 - 6 - 7"))
+        if choice>0 & choice <=7:
+            break
+    choicePlace = lugares[choice-1]
+    return choicePlace
+
+
+def verifyCantTerminalByLugar(lugar):
+    cur = db.cursor()
+    query = 'SELECT numero_terminal FROM TERMINALES WHERE lugar=?'
+    cur.execute(query, (lugar,))
+    result = cur.fetchall()
+    stringResult = str(result)
+    print(result)
+    print(type(result))
+    print(stringResult)
+    if stringResult == '[]':
+        resultado = 0
+        print('RESULT igual a NONE')
+    elif len(result) ==1:
+        resultado = 1
+    elif len(result) ==2:
+        resultado = 2
+
+    return resultado
