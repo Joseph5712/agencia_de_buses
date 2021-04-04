@@ -35,7 +35,7 @@ createTable()
 db = sql.connect('buses_system.db')
 
 usuario = (
-    (1,'1301301301','Luis Auz','luisauz@gmail.com','14-02-1996','masculino','12345','admin')
+    (1,'1301301301','Joseph Méndez','joseph.mendez@gmail.com','14-02-1996','masculino','12345','admin')
 )
 
 with db:
@@ -55,7 +55,7 @@ def createTableTerminales():
         cur.execute('''CREATE TABLE TERMINALES
                         (id integer primary key AUTOINCREMENT,
                         nombre text not null,
-                        lugar text,
+                        lugar text not null,
                         numero_terminal integer not null
                         )''')
         db.commit()
