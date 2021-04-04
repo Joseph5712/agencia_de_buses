@@ -111,6 +111,53 @@ def mantTerminales():
         nombreTerminal = input("Ingrese el nombre de la terminal")
         lugar = choiceLugar()
         createTerminal(nombreTerminal,lugar)
+    elif option == 2:
+        terminales = showTerminals()
+        if not terminales:
+            print("No hay terminales ingresadas")
+        else:
+            for terminal in terminales:
+                print(terminal)
+    elif option ==3:
+        nombreAntiguo = input("Ingrese el nombre de la terminal para actualizar")
+        lugarAntiguo = choiceLugar()
+        nombreNuevo = input("Ingrese el nuevo nombre")
+        lugarNuevo = choiceLugar()
+        updateTerminals(nombreNuevo,nombreAntiguo,lugarNuevo,lugarAntiguo)
+    elif option ==4:
+        nombreTerminal = input("Ingrese el nombre de la terminal")
+        lugar = choiceLugar()
+        deleteTerminal(nombreTerminal,lugar)
+
+def updateTerminals(nombre,nombreOLD,lugar,lugarOLD):
+    cur = db.cursor()
+    query = 'UPDATE TERMINALES set nombre =?,lugar=? WHERE nombre=? AND lugar=?'
+    cur.execute(query,(nombre,lugar,nombreOLD,lugarOLD))
+    db.commit()
+
+def showTerminals():
+    cur = db.cursor()
+    query = 'SELECT nombre,lugar,numero_terminal from TERMINALES'
+    cur.execute(query)
+    resultado = cur.fetchall()
+    db.commit()
+    return resultado
+
+
+def deleteTerminal(nombre,lugar):
+    cur = db.cursor()
+    verification = verifyCantTerminalByLugar(lugar)
+    if verification == 2:
+        query = 'DELETE from TERMINALES where nombre=? AND lugar=?'
+        cur.execute(query, (nombre,lugar))
+        db.commit()
+        update = 'UPDATE TERMINALES set numero_terminal=1 where lugar=?'
+        cur.execute(update,(lugar,))
+        db.commit()
+    else:
+        query = 'DELETE from TERMINALES where nombre=? AND lugar=?'
+        cur.execute(query, (nombre,lugar))
+        db.commit()
 
 def createTerminal(nombre,lugar):
     cur = db.cursor()
