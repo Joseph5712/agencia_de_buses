@@ -59,9 +59,51 @@ def createTableTerminales():
                         numero_terminal integer not null
                         )''')
         db.commit()
-        db.close()
+        # db.close()
     except:
         print("Failed to create terminales table")
 
 createTableTerminales()
+
+def createTableUnidadesBuses():
+    try:
+        db = sql.connect('buses_system.db')
+        cur = db.cursor()
+        cur.execute('''CREATE TABLE UNIDADES
+                        (placa text primary key not null,
+                        capacidad integer not null,
+                        nombre_terminal text not null,
+                        FOREIGN KEY (nombre_terminal)
+                            REFERENCES TERMINALES (nombre)
+                        )''')
+        db.commit()
+    except:
+        print("Failed to create Unidades table")
+
+createTableUnidadesBuses()
+
+def createTableRutas():
+    try:
+        db = sql.connect('buses_system.db')
+        cur = db.cursor()
+        cur.execute('''CREATE TABLE RUTAS
+                        (id integer primary key AUTOINCREMENT,
+                        id_terminal integer not null,
+                        placa_bus text not null,
+                        precio real not null,
+                        fecha_hora_salida text not null,
+                        origen text not null,
+                        fecha_hora_llegada text not null,
+                        destino text not null,
+                        duracion text not null,
+                        FOREIGN KEY (id_terminal)
+                            REFERENCES TERMINALES(id),
+                        FOREIGN KEY (placa_bus)
+                            REFERENCES UNIDADES(placa))
+                        ''')
+        db.commit()
+    except:
+        print("Failed to create Rutas table")
+
+createTableRutas()
 
