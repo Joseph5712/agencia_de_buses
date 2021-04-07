@@ -179,22 +179,39 @@ def showTerminals():
             print("Ingrese correctamente una opcion")
             showTerminals()
 
+def verifyNameTerminal(nombre):
+    cur = db.cursor()
+    query = 'SELECT * FROM TERMINALES where nombre=?'
+    cur.execute(query,(nombre,))
+    result = cur.fetchall()
+    print(result)
+    print(len(result))
+    db.commit()
+    if len(result) == 0:
+        return 0
+
 def deleteTerminal(nombre,lugar):
     cur = db.cursor()
     verification = verifyCantTerminalByLugar(lugar)
-    print(Fore.RED,"SE A ELIMINADO UNA NUEVA TERMINAL")
-    print(Fore.RESET)
+    existe = verifyNameTerminal(nombre)
+    print(existe)
     if verification == 2:
         query = 'DELETE from TERMINALES where nombre=? AND lugar=?'
         cur.execute(query, (nombre,lugar))
         db.commit()
+        print(Fore.RED,"SE A ELIMINADO LA TERMINAL "+nombre)
+        print(Fore.RESET)
         update = 'UPDATE TERMINALES set numero_terminal=1 where lugar=?'
         cur.execute(update,(lugar,))
         db.commit()
-    else:
+    elif verification == 1:
         query = 'DELETE from TERMINALES where nombre=? AND lugar=?'
         cur.execute(query, (nombre,lugar))
         db.commit()
+        print(Fore.RED,"SE A ELIMINADO LA TERMINAL "+nombre)
+        print(Fore.RESET)
+    elif existe == 0:
+        print("Este dato no se encuentra registrado. No se puede eliminar")
 
 def createTerminal(nombre,lugar):
     cur = db.cursor()
