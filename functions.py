@@ -162,7 +162,7 @@ def showTerminals():
     cur.execute(query)
     resultado = cur.fetchall()
     db.commit()
-    for i in resultado:
+    for i in range(0,len(resultado)):
         print(Fore.LIGHTYELLOW_EX + str(resultado[i]))
         print(Fore.RESET)
 
@@ -178,12 +178,6 @@ def showTerminals():
         else:
             print("Ingrese correctamente una opcion")
             showTerminals()
-
-
-
-
-
-
 
 def deleteTerminal(nombre,lugar):
     cur = db.cursor()
