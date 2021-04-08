@@ -1,5 +1,6 @@
 from colorama import Fore
-from functions import *
+from login import inputLogin
+from createUsers import inputCreateUser
 
 def mini_Menu ():
     while True:

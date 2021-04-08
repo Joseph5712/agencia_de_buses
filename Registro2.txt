@@ -1,3 +1,0 @@
-{'1': {'Cedula': 5712, 'Nombre': 'Joseph', 'Correo Electronico': 'jmm7gameover@gmail.com', 'FechaNac': {'Dia': 23, 'Mes': 5, 'Anio': 2003}, 'Genero': 'Masculino', 'Contrasenia': 'salen5712'}}
-{'1': {'Cedula': 123456789, 'Nombre': 'joseph', 'Correo Electronico': 'jmmmmm', 'FechaNac': {'Dia': 23, 'Mes': 23, 'Anio': 23}, 'Genero': 'Masculino', 'Contrasenia': '12345'}}
-{'1': {'Cedula': 112345678, 'Nombre': 'asdfg', 'Correo Electronico': 'wert', 'FechaNac': {'Dia': 12, 'Mes': 12, 'Anio': 12}, 'Genero': 'Femenino', 'Contrasenia': 'qwerty'}}
