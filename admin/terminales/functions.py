@@ -1,6 +1,5 @@
-from admin.main import *
-import admin.main as mn
-import admin.terminales.main as tm
+import admin.terminal as mn
+import admin.terminales.terminals as tm
 
 def volver():
     while True:

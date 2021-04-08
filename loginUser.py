@@ -1,17 +1,17 @@
 from colorama import Fore
-from validations import rightPasswordCedula,verifyUserRole
+import validations as vl
 
 def inputLogin():
     while True:
         print("Porfavor ingrese su cedula correctamente")
         cedula = input("Cedula:")
-        if rightPasswordCedula(cedula) != '':
+        if vl.rightPasswordCedula(cedula) != '':
             break
     while True:
         print("Porfavor ingrese su contraseña correctamente")
         password = input("Password:")
-        if rightPasswordCedula(cedula) == password:
+        if vl.rightPasswordCedula(cedula) == password:
             break
-    verifyUserRole(cedula,password)
+    vl.verifyUserRole(cedula,password)
     return cedula, password
 

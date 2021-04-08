@@ -1,6 +1,6 @@
 from colorama import Fore
-from login import inputLogin
-from createUsers import inputCreateUser
+import loginUser as lg
+import createUsers as cu
 
 def mini_Menu ():
     while True:
@@ -12,20 +12,19 @@ def mini_Menu ():
         print("=========================")
         print("La opcion 1 es para iniciar sesión,\nla opcion 2 es para registrar un nuevo usuario,\nla opcion 3 para salir.")
         print(Fore.RED + str("NOTA"), Fore.RESET,": Si no se a registrado como cliente, en la misma opcion de clientes se podra registrar.")
-        # opciones = int(input("Digite la opción que necesita:"))
         opcion = input("Digite la opción que necesita:")
         while opcion!='1' and opcion != '2' and opcion != '3':
             print("Por favor, Ingrese una opción correcta")
             opcion = input("Digite la opción que necesita:")
         opciones = int(opcion)
         if opciones == 1:
-            inputLogin()
+            lg.inputLogin()
             break
         elif opciones == 2:
             print("Bienvenido, aqui podra registrase o iniciar sesion")
-            inputCreateUser()
+            cu.inputCreateUser()
             break
-        else:
+        elif opciones ==3:
             print("!Que tenga un lindo dia¡")
             break
 mini_Menu()

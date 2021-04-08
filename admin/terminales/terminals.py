@@ -1,8 +1,7 @@
 from colorama import Fore
-from functions import choiceLugar
-from admin.terminales.crud_functions import *
-from admin import *
-# from admin.terminales.functions import volver
+import functions as func
+import admin.terminal as mn
+import admin.terminales.crud_functions as crud
 
 def mantTerminales():
 
@@ -18,10 +17,10 @@ def mantTerminales():
         option = int(input("Ingrese una opción 1 - 2 - 3 - 4 - 5 \n"))
         if option == 1:
             nombreTerminal = input("Ingrese el nombre de la terminal:\n")
-            lugar = choiceLugar()
-            createTerminal(nombreTerminal,lugar)
+            lugar = func.choiceLugar()
+            crud.createTerminal(nombreTerminal,lugar)
         elif option == 2:
-            terminales = showTerminals()
+            terminales = crud.showTerminals()
             if not terminales:
                 print(Fore.RED,"NO HAY TERMINALES INGRESADAS")
                 print(Fore.RESET)
@@ -30,15 +29,15 @@ def mantTerminales():
                     print(terminal)
         elif option == 3:
             nombreAntiguo = input("Ingrese el nombre de la terminal para actualizar:\n")
-            lugarAntiguo = choiceLugar()
+            lugarAntiguo = func.choiceLugar()
             nombreNuevo = input("Ingrese el nuevo nombre:\n")
-            lugarNuevo = choiceLugar()
-            updateTerminals(nombreNuevo, nombreAntiguo, lugarNuevo, lugarAntiguo)
+            lugarNuevo = func.choiceLugar()
+            crud.updateTerminals(nombreNuevo, nombreAntiguo, lugarNuevo, lugarAntiguo)
         elif option == 4:
             nombreTerminal = input("Ingrese el nombre de la terminal:\n")
-            lugar = choiceLugar()
-            deleteTerminal(nombreTerminal, lugar)
+            lugar = func.choiceLugar()
+            crud.deleteTerminal(nombreTerminal, lugar)
         elif option == 5:
-            menuAdmin()
+            mn.menuAdmin()
         else:
             print("DIGITE CORRECTAMENTE LOS DATOS")

@@ -1,4 +1,4 @@
-from constantes import db,role
+import constantes as cs
 
 def inputCreateUser():
     print("Porfavor ingrese su Cedula")
@@ -23,10 +23,10 @@ def inputCreateUser():
         if(passwordInput == passwordInput2):
             password = passwordInput
             break
-    createUser(cedula,nombre,email,fecha_nacimiento,genero,password,role)
+    createUser(cedula,nombre,email,fecha_nacimiento,genero,password,cs.role)
 
 def createUser(cedula,nombre,email,fecha_nacimiento,genero,password,role):
-    cur = db.cursor()
+    cur = cs.db.cursor()
     query = 'INSERT INTO USERS (cedula,nombre,email,fecha_nacimiento,genero,password,role) VALUES(?,?,?,?,?,?,?)'
-    cur.execute(query,(cedula,nombre,email,fecha_nacimiento,genero,password,role))
-    db.commit()
+    cur.execute(query,(cedula,nombre,email,fecha_nacimiento,genero,password,cs.role))
+    cs.db.commit()
