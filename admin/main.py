@@ -1,5 +1,6 @@
 from colorama import Fore
-from admin.terminales.main import mantTerminales
+import admin.terminales.main as tm
+import admin.main as mn
 
 def menuAdmin():
 
@@ -15,9 +16,11 @@ def menuAdmin():
         option = int(input("Ingrese una opción 1 - 2 - 3 - 4 - 5 \n" ))
         if option<0 and option != 1 and option != 2 and option != 3 and option != 4 and option != 5:
             print(Fore.RED,"PORFAVOR INGRESE UN VALOR CORRECTO",Fore.RESET)
-            menuAdmin()
+            # menuAdmin()
+            mn.menuAdmin()
         elif option == 1:
-            mantTerminales()
+            # mantTerminales()
+            tm.mantTerminales()
         elif option == 2:
             pass
         elif option == 3:

@@ -1,6 +1,8 @@
 from colorama import Fore
 from constantes import db
 from admin.terminales.verifications import verifyCantTerminalByLugar,verifyNameTerminal
+from admin.terminales.functions import *
+
 
 def showTerminals():
     cur = db.cursor()
@@ -11,19 +13,8 @@ def showTerminals():
     for i in range(0,len(resultado)):
         print(Fore.LIGHTYELLOW_EX + str(resultado[i]))
         print(Fore.RESET)
-
-    while True:
-        print("Digite 1 para volver al menu principal de admin o 2 para mantenimiento de terminales ")
-        volver_menu = int(input("Digite su opcion:\n"))
-        if volver_menu == 1:
-            menuAdmin()
-            return resultado
-        elif volver_menu == 2:
-            mantTerminales()
-            return resultado
-        else:
-            print("Ingrese correctamente una opcion")
-            showTerminals()
+    volver()
+    return resultado
 
 def deleteTerminal(nombre,lugar):
     cur = db.cursor()

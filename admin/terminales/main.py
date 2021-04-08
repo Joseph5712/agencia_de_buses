@@ -1,6 +1,8 @@
 from colorama import Fore
 from functions import choiceLugar
 from admin.terminales.crud_functions import *
+from admin import *
+# from admin.terminales.functions import volver
 
 def mantTerminales():
 
