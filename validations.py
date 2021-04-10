@@ -1,4 +1,4 @@
-import admin.terminal as amn
+import admin.admin as amn
 import constantes as ct
 
 def verifyUserRole(cedula,password):

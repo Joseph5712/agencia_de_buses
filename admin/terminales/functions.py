@@ -1,4 +1,4 @@
-import admin.terminal as mn
+import admin.admin as mn
 import admin.terminales.terminals as tm
 
 def volver():
