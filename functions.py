@@ -1,4 +1,4 @@
-from constantes import lugares
+from constantes import lugares,db
 
 def choiceLugar():
 
@@ -38,3 +38,28 @@ def choiceLugar():
         else:
             print("DIGITE LOS DATOS CORRECTAMENTE")
             choiceLugar()
+
+def calcularEdad(cedula):
+    cur = db.cursor()
+    query = "SELECT (strftime('%Y', 'now') - strftime('%Y', fecha_nacimiento )) - (strftime('%m-%d', 'now') < strftime('%m-%d', fecha_nacimiento )) from USERS where cedula=?;"
+    cur.execute(query,(cedula,))
+    resultado = cur.fetchone()
+    db.commit()
+    edad = resultado[0]
+    return edad
+
+def calculoEdad():
+    cur = db.cursor()
+    query = "SELECT nombre FROM USERS where cedula =?"
+    while True:
+        cedula = input("Ingrese su cedula:\n")
+        cur.execute(query,(cedula,))
+        resultado = cur.fetchone()
+        verificacion = resultado[0]
+        if verificacion !='':
+            break
+    edad=calcularEdad(cedula)
+    print(edad)
+    db.commit()
+
+calculoEdad()

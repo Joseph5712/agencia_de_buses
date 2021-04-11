@@ -1,4 +1,5 @@
 import sqlite3 as sql
+import datetime as dt
 
 def createDB():
     try:
@@ -20,7 +21,7 @@ def createTable():
                         cedula text not null unique,
                         nombre text not null,
                         email text not null,
-                        fecha_nacimiento text not null,
+                        fecha_nacimiento date not null,
                         genero text not null,
                         password text not null,
                         role text not null
@@ -35,7 +36,7 @@ createTable()
 db = sql.connect('buses_system.db')
 
 usuario = (
-    (1,'1301301301','Joseph Méndez','joseph.mendez@gmail.com','14-02-1996','masculino','12345','admin')
+    (1,'1301301301','Joseph Méndez','joseph.mendez@gmail.com',dt.date(1996,2,14),'masculino','12345','admin')
 )
 
 with db:
@@ -91,9 +92,9 @@ def createTableRutas():
                         id_terminal integer not null,
                         placa_bus text not null,
                         precio real not null,
-                        fecha_hora_salida text not null,
+                        fecha_hora_salida datetime not null,
                         origen text not null,
-                        fecha_hora_llegada text not null,
+                        fecha_hora_llegada datetime not null,
                         destino text not null,
                         duracion text not null,
                         FOREIGN KEY (id_terminal)
@@ -106,4 +107,3 @@ def createTableRutas():
         print("Failed to create Rutas table")
 
 createTableRutas()
-
