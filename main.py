@@ -29,5 +29,5 @@ def mini_Menu ():
             break
         elif opciones == 3:
             print("!Que tenga un lindo dia¡")
-            break
+            exit()
 mini_Menu()

@@ -1,5 +1,6 @@
 from colorama import Fore
 import admin.terminales.terminals as tm
+import admin.unidades.units as ut
 
 
 
@@ -21,7 +22,7 @@ def menuAdmin():
         elif option == 1:
             tm.mantTerminales()
         elif option == 2:
-            pass
+            ut.mantUnidades()
         elif option == 3:
             pass
         elif option == 4:
