@@ -1,4 +1,5 @@
 import constantes as cs
+import admin as Ad
 
 def inputCreateUser():
     print("Porfavor ingrese su Cedula")
@@ -22,7 +23,7 @@ def inputCreateUser():
         passwordInput2 = input("Password:")
         if(passwordInput == passwordInput2):
             password = passwordInput
-            break
+        Ad.mini_Menu()
     createUser(cedula,nombre,email,fecha_nacimiento,genero,password,cs.role)
 
 def createUser(cedula,nombre,email,fecha_nacimiento,genero,password,role):
