@@ -48,55 +48,27 @@ def createRuta():
     from functions import choiceLugar
     print("Ingrese su lugar de origen\n")
     origen = choiceLugar()
-    print(f'Valor de ORIGEN -> {origen}')
     while True:
         print("Ingrese su lugar de destino\n")
         destino = choiceLugar()
-        print(f'Valor de DESTINO -> {destino} {type(destino)}')
         if origen!=destino:
             break
     destinoID = frut.terminal(destino)
-    print(destinoID)
     nombre_terminal = frut.nombreTerminal(destinoID)
-    print(nombre_terminal)
     placa_bus = frut.autobus(nombre_terminal)
-    print(placa_bus)
     precio = float(input('Ingrese el precio del viaje:\n'))
     print("INGRESE LA DURACION DEL VIAJE\n")
-    print(precio)
     duracion = frut.duracion()
-    print(duracion[0])
-    print(type(duracion[0]))
-    print(duracion[1])
-    print(type(duracion[1]))
     tiempo_duracion=dt.timedelta(hours=duracion[0],minutes=duracion[1])
     tiempoDuracion = dt.time(duracion[0],duracion[1])
-    print(tiempoDuracion)
-    print(type(tiempoDuracion))
-    print(tiempo_duracion)
-    print(type(tiempo_duracion))
     print("INGRESE LA FECHA Y HORA DE SALIDA\n")
     salida = frut.fechaHora()
     fecha_hora_salida = dt.datetime(salida[0],salida[1],salida[2],salida[3],salida[4],salida[5])
-    print(fecha_hora_salida)
     fecha_hora_llegada=fecha_hora_salida + tiempo_duracion
-    print(fecha_hora_llegada)
-    print(type(fecha_hora_llegada))
-    # llegada = dt.datetime(fecha_hora_llegada).strftime('%Y-%m-%d %H-%M-%S')
-    
-    # try:
     cur = cs.db.cursor()
     query = 'INSERT INTO RUTAS (id_terminal,placa_bus,precio,fecha_hora_salida,origen,fecha_hora_llegada,destino,duracion) VALUES(?,?,?,?,?,?,?,?)'
-    # datos = (destinoID,placa_bus,precio,fecha_hora_salida.strftime(fmt="%Y-%m-%d %H:%M:%S"),origen,fecha_hora_llegada.strftime(fmt="%Y-%m-%d %H:%M:%S"),destino,tiempoDuracion.strftime(fmt="%H:%M:%S"))
-    # cur.execute("INSERT INTO RUTAS (id_terminal,placa_bus,precio,fecha_hora_salida,origen,fecha_hora_llegada,destino,duracion) VALUES({destinoID},{placa_bus},{precio},strftime('%Y-%m-%d %H:%M:%S',{fecha_hora_salida}),{origen},strftime('%Y-%m-%d %H:%M:%S',{fecha_hora_llegada}),{duracion},strftime('%Y-%m-%d %H:%M:%S',{tiempoDuracion}))")
-    # cur.execute(query,(destinoID,placa_bus,precio,fecha_hora_salida.strftime('%Y-%m-%d %H:%M:%S'),origen,fecha_hora_llegada.strftime('%Y-%m-%d %H:%M:%S') ,destino,tiempoDuracion.strftime("%H:%M:%S")))
     cur.execute(query,(destinoID,placa_bus,precio,fecha_hora_salida.strftime("%Y-%m-%d %H:%M:%S"),origen,fecha_hora_llegada.strftime("%Y-%m-%d %H:%M:%S"),destino,tiempoDuracion.strftime("%H:%M:%S")))
     cs.db.commit()
-    print("Data inserted")
-    # except:
-    # print("fallo la insercion")
-    # exit()
-
 def updateTerminals(nombre,nombreOLD,lugar,lugarOLD):
     cur = cs.db.cursor()
     query = 'UPDATE TERMINALES set nombre =?,lugar=? WHERE nombre=? AND lugar=?'
