@@ -61,5 +61,3 @@ def calculoEdad():
     edad=calcularEdad(cedula)
     print(edad)
     db.commit()
-
-calculoEdad()

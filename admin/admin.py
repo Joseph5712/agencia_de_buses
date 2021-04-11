@@ -1,7 +1,7 @@
 from colorama import Fore
 import admin.terminales.terminals as tm
 import admin.unidades.units as ut
-
+import admin.rutas.rutas as rut
 
 
 def menuAdmin():
@@ -24,7 +24,7 @@ def menuAdmin():
         elif option == 2:
             ut.mantUnidades()
         elif option == 3:
-            pass
+            rut.mantRutas()
         elif option == 4:
             pass
         elif option == 5:

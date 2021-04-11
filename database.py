@@ -96,7 +96,7 @@ def createTableRutas():
                         origen text not null,
                         fecha_hora_llegada datetime not null,
                         destino text not null,
-                        duracion text not null,
+                        duracion time not null,
                         FOREIGN KEY (id_terminal)
                             REFERENCES TERMINALES(id),
                         FOREIGN KEY (placa_bus)
