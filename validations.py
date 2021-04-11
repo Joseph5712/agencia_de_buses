@@ -1,6 +1,6 @@
 import admin.terminal as amn
 import constantes as ct
-
+from colorama import Fore
 def verifyUserRole(cedula,password):
     cur = ct.db.cursor()
     query = 'SELECT role FROM USERS WHERE cedula=? AND password=?'
@@ -8,11 +8,14 @@ def verifyUserRole(cedula,password):
     result = cur.fetchone()
     ct.db.commit()
     if result[0] == ct.adminRole:
-        print("SOY ADMIN")
+        print(Fore.LIGHTGREEN_EX)
+        print("BIENVENIDO ADMINISTRADOR")
+        print(Fore.RESET)
         amn.menuAdmin()
     else:
-        print("SOY PASAJERO")
-
+        print(Fore.LIGHTGREEN_EX)
+        print("BIENVENIDO CLIENTE(PASAJERO)")
+        print(Fore.RESET)
 def rightPasswordCedula(cedula):
     cur = ct.db.cursor()
     query = 'SELECT password FROM USERS WHERE cedula=?'

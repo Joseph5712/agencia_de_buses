@@ -1,7 +1,7 @@
 import admin.terminales.functions as fn
 import admin.terminales.verifications as vr
 import constantes as cs
-
+from colorama import Fore
 
 
 def showTerminals():
@@ -9,7 +9,7 @@ def showTerminals():
     query = 'SELECT nombre,lugar,numero_terminal from TERMINALES'
     cur.execute(query)
     resultado = cur.fetchall()
-    db.commit()
+    cs.db.commit()
     for i in range(0,len(resultado)):
         print(Fore.LIGHTYELLOW_EX + str(resultado[i]))
         print(Fore.RESET)
