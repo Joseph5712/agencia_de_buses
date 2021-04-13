@@ -2,6 +2,7 @@ from colorama import Fore
 import functions as func
 import admin.admin as mn
 import admin.terminales.crud_functions as crud
+import admin.terminales.verifications as vr
 
 def mantTerminales():
 
@@ -21,17 +22,10 @@ def mantTerminales():
             crud.createTerminal(nombreTerminal,lugar)
         elif option == 2:
             terminales = crud.showTerminals()
-
         elif option == 3:
-            nombreAntiguo = input("Ingrese el nombre de la terminal para actualizar:\n")
-            lugarAntiguo = func.choiceLugar()
-            nombreNuevo = input("Ingrese el nuevo nombre:\n")
-            lugarNuevo = func.choiceLugar()
-            crud.updateTerminals(nombreNuevo, nombreAntiguo, lugarNuevo, lugarAntiguo)
+            crud.updateTerminals()
         elif option == 4:
-            nombreTerminal = input("Ingrese el nombre de la terminal:\n")
-            lugar = func.choiceLugar()
-            crud.deleteTerminal(nombreTerminal, lugar)
+            crud.deleteTerminal()
         elif option == 5:
             mn.menuAdmin()
         else:

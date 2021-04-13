@@ -1,9 +1,6 @@
 import constantes as cs
-<<<<<<< HEAD
 import datetime
-=======
 import admin as Ad
->>>>>>> dev
 
 def inputCreateUser():
     print("Porfavor ingrese su Cedula")
