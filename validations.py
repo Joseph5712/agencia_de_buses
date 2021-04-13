@@ -1,6 +1,10 @@
 import admin.admin as amn
 import constantes as ct
 from colorama import Fore
+import re
+from validate_email import validate_email
+
+
 def verifyUserRole(cedula,password):
     cur = ct.db.cursor()
     query = 'SELECT role FROM USERS WHERE cedula=? AND password=?'
@@ -27,3 +31,17 @@ def rightPasswordCedula(cedula):
     ct.db.commit()
     passwordRight = result[0]
     return passwordRight
+
+def structureEmail(email):
+    if(re.search(ct.regex, email)):
+        return 0
+    else:
+        return 1
+
+def validateEmail():
+    while True:
+        print("Porfavor ingrese su Email")
+        email = input("Email:")
+        is_valid = validate_email(email,verify=True)
+        if is_valid == None:
+            break

@@ -1,14 +1,14 @@
 import constantes as cs
 import datetime
 import admin as Ad
+import validations as vl
 
 def inputCreateUser():
     print("Porfavor ingrese su Cedula")
     cedula = input("Cedula:")
     print("Porfavor ingrese su Nombre")
     nombre = input("Nombre:")
-    print("Porfavor ingrese su Email")
-    email = input("Email:")
+    vl.validateEmail()
     print("Porfavor ingrese su fecha de nacimiento")
     while True:
         anio = int(input("Año de Nacimiento:"))
