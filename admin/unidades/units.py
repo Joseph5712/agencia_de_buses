@@ -31,8 +31,6 @@ def mantUnidades():
             cr.createUnidad(placa,capacidad,terminal)
         elif option == 2:
             unidades = cr.showUnidades()
-            #for i in len(unidades):
-             #   print(i)
             func.volver()
 
         elif option == 3:
@@ -52,7 +50,7 @@ def mantUnidades():
                 terminal = terminal.replace("',)","")
                 capacidad = input("Ingrese la nueva capacidad de la unidad para actualizar:\n")
                 cr.updateUnidad(capacidad,terminal,placa)
-                func.volver()
+                # func.volver()
         elif option == 4:
             placa = input("Ingrese la placa de la unidad:\n")
             cr.deleteUnidad(placa)
