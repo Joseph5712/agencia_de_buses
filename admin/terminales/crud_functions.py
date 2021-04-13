@@ -2,11 +2,6 @@ import admin.terminales.functions as fn
 import admin.terminales.verifications as vr
 import constantes as cs
 from colorama import Fore
-<<<<<<< HEAD
-=======
-
->>>>>>> c35113f52898d75128fbe63dfce6eff3d527a9e3
-
 
 def showTerminals():
     cur = cs.db.cursor()
@@ -14,13 +9,8 @@ def showTerminals():
     cur.execute(query)
     resultado = cur.fetchall()
     cs.db.commit()
-<<<<<<< HEAD
-    for i in range(0,len(resultado)):
-        print(Fore.LIGHTYELLOW_EX + str(resultado[i]))
-=======
     if len(resultado)==0:
         print(Fore.RED,"NO HAY UNIDADES INGRESADAS")
->>>>>>> c35113f52898d75128fbe63dfce6eff3d527a9e3
         print(Fore.RESET)
     else:
         for i in range(0,len(resultado)):
