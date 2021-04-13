@@ -1,6 +1,5 @@
 import constantes as cs
 import datetime
-import admin as Ad
 import validations as vl
 
 def inputCreateUser():
@@ -8,7 +7,7 @@ def inputCreateUser():
     cedula = input("Cedula:")
     print("Porfavor ingrese su Nombre")
     nombre = input("Nombre:")
-    vl.validateEmail()
+    email = vl.validateEmail()
     print("Porfavor ingrese su fecha de nacimiento")
     while True:
         anio = int(input("Año de Nacimiento:"))
@@ -43,7 +42,7 @@ def inputCreateUser():
         passwordInput2 = input("Password:")
         if(passwordInput == passwordInput2):
             password = passwordInput
-        Ad.mini_Menu()
+            break
     createUser(cedula,nombre,email,fecha_nacimiento,genero,password,cs.role)
 
 def createUser(cedula,nombre,email,fecha_nacimiento,genero,password,role):

@@ -26,6 +26,7 @@ def mini_Menu ():
         elif opciones == 2:
             print("Bienvenido, aqui podra registrase o iniciar sesion")
             cu.inputCreateUser()
+            mini_Menu()
             break
         elif opciones == 3:
             print("!Que tenga un lindo dia¡")

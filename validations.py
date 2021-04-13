@@ -45,3 +45,4 @@ def validateEmail():
         is_valid = validate_email(email,verify=True)
         if is_valid == None:
             break
+    return email
