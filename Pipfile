@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 colorama = "*"
+validate-email = "*"
+py3dns = "*"
 
 [dev-packages]
 
