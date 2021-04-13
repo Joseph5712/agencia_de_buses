@@ -24,10 +24,8 @@ def mantUnidades():
                     break
             terminales = func.showTerminals()
             choice = int(input("Escoger una terminal"))
-            terminal = str(terminales[choice-1])
-            terminal = terminal.replace("('","")
-            terminal = terminal.replace("',)","")
-            capacidad = int(input("Ingrese la capacidad de pasajeros de la Unidad"))
+            terminal = terminales[choice-1][0]
+            capacidad = un.capacidadLimiteUnidad()
             cr.createUnidad(placa,capacidad,terminal)
         elif option == 2:
             unidades = cr.showUnidades()

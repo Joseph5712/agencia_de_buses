@@ -41,3 +41,10 @@ def cantDeleteModify(placa):
         return 0
     else:
         return 1
+
+def capacidadLimiteUnidad():
+    while True:
+        capacidad = int(input("Ingrese la capacidad de pasajeros de la Unidad"))
+        if capacidad<=36:
+            break
+    return capacidad

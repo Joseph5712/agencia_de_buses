@@ -10,6 +10,7 @@ def showUnidades():
     query = 'SELECT placa, capacidad,nombre_terminal from UNIDADES'
     cur.execute(query)
     resultado = cur.fetchall()
+    return resultado
     cs.db.commit()
     if len(resultado)==0:
         print(Fore.RED,"NO HAY UNIDADES INGRESADAS")
@@ -67,8 +68,7 @@ def updateUnidad():
         terminales = fn.showTerminals()
         choice = int(input("Escoger una nueva terminal"))
         terminal = terminales[choice-1][0]
-        capacidad = input("Ingrese la nueva capacidad de la unidad para actualizar:\n")
-        cr.updateUnidad(capacidad,terminal,placa)
+        capacidad = vr.capacidadLimiteUnidad()
         cur = cs.db.cursor()
         query = 'UPDATE UNIDADES set capacidad=?,nombre_terminal=? WHERE placa=?'
         cur.execute(query,(capacidad,terminal,placa))
