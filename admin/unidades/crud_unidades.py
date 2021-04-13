@@ -7,10 +7,9 @@ from colorama import Fore
 
 def showUnidades():
     cur = cs.db.cursor()
-    query = 'SELECT placa,capacidad,nombre_terminal from UNIDADES'
+    query = 'SELECT placa, capacidad,nombre_terminal from UNIDADES'
     cur.execute(query)
     resultado = cur.fetchall()
-    return resultado
     cs.db.commit()
     if len(resultado)==0:
         print(Fore.RED,"NO HAY UNIDADES INGRESADAS")

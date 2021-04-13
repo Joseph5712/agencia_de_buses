@@ -14,7 +14,7 @@ def volver():
             ut.mantUnidades()
         else:
             print("Ingrese correctamente una opcion")
-            showTerminals()
+            volver()
 
 
 def randomPlaca():

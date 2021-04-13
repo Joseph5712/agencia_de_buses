@@ -6,10 +6,10 @@ def mini_Menu ():
     while True:
         print(Fore.YELLOW+str("TERMINAL"))
         print(Fore.RESET)
-        print("=========================")
+        print("=============================================")
         print("Bienvenido al Sistema de de Rutas Autobuseras")
-        print("=========================")
-        print("=========================")
+        print("=============================================")
+        print("")
         print("La opcion 1 es para iniciar sesión,\nla opcion 2 es para registrar un nuevo usuario,\nla opcion 3 para salir.")
         print(Fore.RED + str("NOTA"), Fore.RESET,": Si no se a registrado como cliente, en la misma opcion de clientes se podra registrar.")
         opcion = input("Digite la opción que necesita:")

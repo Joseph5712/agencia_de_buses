@@ -18,14 +18,12 @@ def mantRutas():
         option = int(input("Ingrese una opción 1 - 2 - 3 - 4 - 5 \n"))
         if option == 1:
             cr.createRuta()
-        # elif option == 2:
-            
-
-        # elif option == 3:
-            
-        # elif option == 4:
-            
-        # elif option == 5:
-            
-        # else:
+        elif option == 2:
+            pass
+        elif option == 3:
+            pass
+        elif option == 4:
+            pass
+        elif option == 5:
+            mn.menuAdmin()
             

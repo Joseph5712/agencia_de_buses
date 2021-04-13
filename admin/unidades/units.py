@@ -31,6 +31,8 @@ def mantUnidades():
             cr.createUnidad(placa,capacidad,terminal)
         elif option == 2:
             unidades = cr.showUnidades()
+            #for i in len(unidades):
+             #   print(i)
             func.volver()
 
         elif option == 3:
