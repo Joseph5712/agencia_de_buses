@@ -36,21 +36,10 @@ def mantUnidades():
         elif option == 3:
             unidades = cr.showUnidades()
             if len(unidades) == 0:
+                print("No hay unidades que actualizar")
                 break
             else:
-                while True:
-                    placa = input("Ingrese la placa de la unidad para actualizar:\n")
-                    existe = un.verifyPlacaUnidad(placa)
-                    if existe == 1:
-                        break
-                terminales = func.showTerminals()
-                choice = int(input("Escoger una nueva terminal"))
-                terminal = str(terminales[choice-1])
-                terminal = terminal.replace("('","")
-                terminal = terminal.replace("',)","")
-                capacidad = input("Ingrese la nueva capacidad de la unidad para actualizar:\n")
-                cr.updateUnidad(capacidad,terminal,placa)
-                # func.volver()
+                cr.updateUnidad()
         elif option == 4:
             placa = input("Ingrese la placa de la unidad:\n")
             cr.deleteUnidad(placa)

@@ -25,11 +25,15 @@ def deleteUnidad(placa):
     if verification == 0:
         print("Este dato no se encuentra registrado. No se puede eliminar")
     else:
-        query = 'DELETE from UNIDADES where placa=?'
-        cur.execute(query, (placa,))
-        cs.db.commit()
-        print(Fore.RED,"SE A ELIMINADO LA UNIDAD "+placa)
-        print(Fore.RESET)
+        verify = vr.cantDeleteModify(placa)
+        if verify > 0:
+            print("No se puede eliminar la unidad")
+        else:
+            query = 'DELETE from UNIDADES where placa=?'
+            cur.execute(query, (placa,))
+            cs.db.commit()
+            print(Fore.RED,"SE A ELIMINADO LA UNIDAD "+placa)
+            print(Fore.RESET)
     fn.volver()
 
 def createUnidad(placa,capacidad,terminal):
@@ -50,11 +54,25 @@ def createUnidad(placa,capacidad,terminal):
     cs.db.commit()
     fn.volver()
 
-def updateUnidad(capacidad,terminal,placa):
-    cur = cs.db.cursor()
-    query = 'UPDATE UNIDADES set capacidad=?,nombre_terminal=? WHERE placa=?'
-    cur.execute(query,(capacidad,terminal,placa))
-    cs.db.commit()
-    print(Fore.LIGHTGREEN_EX,"SE A EDITADO CORRECTAMENTE")
-    print(Fore.RESET)
+def updateUnidad():
+    while True:
+        placa = input("Ingrese la placa de la unidad para actualizar:\n")
+        existe = vr.verifyPlacaUnidad(placa)
+        if existe == 1:
+            break
+    verify = vr.cantDeleteModify(placa)
+    if verify > 0:
+        print("No se puede modificar la unidad")
+    else:
+        terminales = fn.showTerminals()
+        choice = int(input("Escoger una nueva terminal"))
+        terminal = terminales[choice-1][0]
+        capacidad = input("Ingrese la nueva capacidad de la unidad para actualizar:\n")
+        cr.updateUnidad(capacidad,terminal,placa)
+        cur = cs.db.cursor()
+        query = 'UPDATE UNIDADES set capacidad=?,nombre_terminal=? WHERE placa=?'
+        cur.execute(query,(capacidad,terminal,placa))
+        cs.db.commit()
+        print(Fore.LIGHTGREEN_EX,"SE A EDITADO CORRECTAMENTE")
+        print(Fore.RESET)
     fn.volver()
