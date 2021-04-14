@@ -78,3 +78,17 @@ def autobus(nombre_terminal):
         aleatorio = rm.randint(0,1)
         return str(resultado[aleatorio][0])
     cs.db.commit()
+
+def volver():
+    while True:
+        print("DIGITE 1 PARA VOLVER AL MENU DEL ADMINISTRADOR O\n2 PARA EL MANTENIMIENTO DE RUTAS ")
+        volver_menu = int(input("Digite su opcion:\n"))
+        import admin.admin as mn
+        import admin.rutas.rutas as rt
+        if volver_menu == 1:
+            mn.menuAdmin()
+        elif volver_menu == 2:
+            rt.mantRutas()
+        else:
+            print("Ingrese correctamente una opcion")
+            volver()
