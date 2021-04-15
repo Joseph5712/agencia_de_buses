@@ -3,6 +3,7 @@ import constantes as ct
 from colorama import Fore
 import re
 from validate_email import validate_email
+import user.pasajero as ps
 
 
 def verifyUserRole(cedula,password):
@@ -20,6 +21,7 @@ def verifyUserRole(cedula,password):
         print(Fore.LIGHTGREEN_EX)
         print("BIENVENIDO CLIENTE(PASAJERO)")
         print(Fore.RESET)
+        ps.menuPasajero()
 def rightPasswordCedula(cedula):
     cur = ct.db.cursor()
     query = 'SELECT password FROM USERS WHERE cedula=?'
