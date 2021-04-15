@@ -92,3 +92,10 @@ def volver():
         else:
             print("Ingrese correctamente una opcion")
             volver()
+
+def unidad(id_ruta):
+    cur = cs.db.cursor()
+    query = 'SELECT placa_bus from RUTAS where id=?'
+    cur.execute(query,(id_ruta,))
+    resultado = cur.fetchone()
+    return resultado[0]
