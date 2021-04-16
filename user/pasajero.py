@@ -1,4 +1,5 @@
 from colorama import Fore
+import user.busquedaruta.rutabusqueda as bs
 
 
 def menuPasajero():
@@ -14,7 +15,7 @@ def menuPasajero():
             print(Fore.RED,"PORFAVOR INGRESE UN VALOR CORRECTO",Fore.RESET)
             menuPasajero()
         elif option == 1:
-            pass
+            bs.busquedaRuta()
         elif option == 2:
             import main as mn
             mn.mini_Menu()

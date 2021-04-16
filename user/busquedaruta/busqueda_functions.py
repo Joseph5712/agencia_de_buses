@@ -1,3 +1,6 @@
+import constantes as cs
+from datetime import datetime
+
 def fecha():
     while True:
         anio = int(input("Año:\n"))
@@ -20,3 +23,26 @@ def fecha():
                 break
     fechaHora = [anio,mes,dia]
     return fechaHora
+
+def caminoIntermedio(origen,destino,dateSearch):
+    cur = cs.db.cursor()
+    queryOrigen = 'SELECT id_terminal,destino,fecha_hora_llegada,id from RUTAS where strftime("%Y-%m-%d",fecha_hora_salida) like ? and origen=?'
+    cur.execute(queryOrigen, (dateSearch,origen))
+    resultadoOrigen = cur.fetchall()
+    print(resultadoOrigen)
+    listResultadoOrigen = []
+    if len(resultadoOrigen) !=0:
+        for i in range(0,len(resultadoOrigen)):
+            queryDestino = 'SELECT id,id_terminal,fecha_hora_salida from RUTAS where strftime("%Y-%m-%d",fecha_hora_salida) like ? and origen=? and destino=?'
+            cur.execute(queryDestino,(dateSearch,resultadoOrigen[i][1],destino))
+            resultadoDestino = cur.fetchall()
+            print(resultadoDestino)
+            if len(resultadoDestino) == 0:
+                continue
+            else:
+                for j in range(0,len(resultadoDestino)):
+                    tiempoUno = datetime.strptime(resultadoOrigen[i][2],cs.fecha_hora)
+                    tiempoDos = datetime.strptime(resultadoDestino[j][2],cs.fecha_hora)
+                    if tiempoUno < tiempoDos:
+                        listResultadoOrigen.append([resultadoDestino[j][0],resultadoOrigen[i][3]])
+    return listResultadoOrigen
