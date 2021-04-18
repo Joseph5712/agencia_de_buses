@@ -1,6 +1,6 @@
 import constantes as cs
 from datetime import datetime
-
+import sqlite3 as sq
 
 def fecha():
     while True:
@@ -64,3 +64,50 @@ def continuar():
         return 1
     if choice ==2:
         return 2
+
+def asientos(id_ruta):
+    cur = cs.db.cursor()
+    queryPlaca = 'SELECT placa_bus from RUTAS where id=?'
+    cur.execute(queryPlaca,(id_ruta,))
+    resultadoPlaca = cur.fetchone()
+    placa_bus = resultadoPlaca[0]
+    cs.db.commit()
+    queryCapacidad = 'SELECT capacidad from UNIDADES where placa=?'
+    cur.execute(queryCapacidad,(placa_bus,))
+    resultadoCapacidad = cur.fetchone()
+    capacidadBus = int(resultadoCapacidad[0])
+    if capacidadBus == 36:
+        asientos = cs.asientos[0]
+    if capacidadBus == 35:
+        asientos = cs.asientos[1]
+    if capacidadBus == 34:
+        asientos = cs.asientos[2]
+    if capacidadBus == 33:
+        asientos = cs.asientos[3]
+    if capacidadBus == 32:
+        asientos = cs.asientos[4]
+    if capacidadBus == 31:
+        asientos = cs.asientos[5]
+    if capacidadBus == 30:
+        asientos = cs.asientos[6]
+    if capacidadBus == 29:
+        asientos = cs.asientos[7]
+    if capacidadBus == 28:
+        asientos = cs.asientos[8]
+    if capacidadBus == 27:
+        asientos = cs.asientos[9]
+    if capacidadBus == 26:
+        asientos = cs.asientos[10]
+    if capacidadBus == 25:
+        asientos = cs.asientos[11]
+    if capacidadBus == 24:
+        asientos = cs.asientos[12]
+    if capacidadBus == 23:
+        asientos = cs.asientos[13]
+    if capacidadBus == 22:
+        asientos = cs.asientos[14]
+    if capacidadBus == 21:
+        asientos = cs.asientos[15]
+    if capacidadBus == 20:
+        asientos = cs.asientos[16]
+    return asientos
