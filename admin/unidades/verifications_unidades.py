@@ -44,7 +44,7 @@ def cantDeleteModify(placa):
 
 def capacidadLimiteUnidad():
     while True:
-        capacidad = int(input("Ingrese la capacidad de pasajeros de la Unidad"))
-        if capacidad<=36:
+        capacidad = int(input("Ingrese la capacidad de pasajeros de la Unidad. Debe ser minimo 20 y maximo 36"))
+        if capacidad>=20 and capacidad<=36:
             break
     return capacidad
