@@ -87,12 +87,15 @@ def busquedaRuta():
         if choice==2:
             print("OPCION DE RUTA CON ESCALAS")
             print(f"SU RUTA ELEGIDA ES {result2[0][0]}-{result3[0][0]}-{result3[0][1]}")
-            escalas = [intermedio1,intermedio2]
-            return escalas
+            idEscalas = [intermedio1,intermedio2]
+            return idEscalas
     if len(result)!=0:
         print("OPCION DE RUTA DIRECTA")
         while True:
             choiceDirecta = int(input("Digite su elección"))
             if choiceDirecta>0 and choiceDirecta<=opcionDirecta:
                 break
+        idDirecta = result[choiceDirecta-1][0]
+        print(f"SU RUTA ELEGIDA ES {choiceDirecta}")
+        return idDirecta
 
