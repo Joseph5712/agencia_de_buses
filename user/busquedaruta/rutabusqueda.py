@@ -18,6 +18,7 @@ def busquedaRuta():
     print("INGRESE LA FECHA DE SALIDA\n")
     salida = frut.fecha()
     tiempo_salida = dt.date(salida[0],salida[1],salida[2])
+    fmt_tiempo_salida = datetime.strftime(tiempo_salida,"%d-%m-%Y")
     intermedio = frut.caminoIntermedio(origen,destino,tiempo_salida)
     query = 'SELECT id,origen,destino,fecha_hora_salida,fecha_hora_llegada,duracion,precio from RUTAS where strftime("%Y-%m-%d",fecha_hora_salida) like ? and origen=? and destino =?'
     cur.execute(query,(tiempo_salida,origen,destino))
@@ -58,9 +59,15 @@ def busquedaRuta():
             print(f"DURACION DEL VIAJE: {duracionViaje}")
             print(f"PRECIO POR PERSONA: {precioEscala}")
     else:
-        print(f"NO SE ENCONTRARON RUTAS PARA VIAJAR DE {origen} - {destino} EN {tiempo_salida}")
+        print(f"NO SE ENCONTRARON RUTAS PARA VIAJAR DE {origen} - {destino} EN {fmt_tiempo_salida}")
+        action = frut.continuar()
+        if action ==1:
+            busquedaRuta()
+        elif action ==2:
+            from user.pasajero import menuPasajero
+            menuPasajero()
 
-    if len(result)!=0 and len(intermedio):
+    if len(result)!=0 and len(intermedio)!=0:
         print("ELEGIR UNA OPCIÓN")
         print("1. RUTA DIRECTA")
         print("2. RUTA CON ESCALAS")
@@ -82,4 +89,10 @@ def busquedaRuta():
             print(f"SU RUTA ELEGIDA ES {result2[0][0]}-{result3[0][0]}-{result3[0][1]}")
             escalas = [intermedio1,intermedio2]
             return escalas
+    if len(result)!=0:
+        print("OPCION DE RUTA DIRECTA")
+        while True:
+            choiceDirecta = int(input("Digite su elección"))
+            if choiceDirecta>0 and choiceDirecta<=opcionDirecta:
+                break
 
