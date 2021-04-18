@@ -2,6 +2,7 @@ import validations as vl
 
 def inputLogin():
     while True:
+        global cedula
         print("Porfavor ingrese su cedula correctamente")
         cedula = input("CEDULA:")
         if vl.rightPasswordCedula(cedula) != '':

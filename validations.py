@@ -22,6 +22,7 @@ def verifyUserRole(cedula,password):
         print("BIENVENIDO CLIENTE(PASAJERO)")
         print(Fore.RESET)
         ps.menuPasajero()
+
 def rightPasswordCedula(cedula):
     cur = ct.db.cursor()
     query = 'SELECT password FROM USERS WHERE cedula=?'
