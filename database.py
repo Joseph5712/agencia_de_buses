@@ -107,3 +107,29 @@ def createTableRutas():
         print("Failed to create Rutas table")
 
 createTableRutas()
+
+def createTableHistorial():
+    try:
+        db = sql.connect('buses_system.db')
+        cur = db.cursor()
+        cur.execute('''CREATE TABLE HISTORIAL
+                        (id integer primary key AUTOINCREMENT,
+                        cedula text not null,
+                        lugar_salida text not null,
+                        lugar_llegada text not null,
+                        lugar_intermedio text,
+                        fecha_hora_compra_ticket datetime not null,
+                        cantidad_boletos integer not null,
+                        asientos text not null,
+                        duracion time not null,
+                        costo_total real not null,
+                        FOREIGN KEY (lugar_salida)
+                            REFERENCES RUTAS(origen),
+                        FOREIGN KEY (cedula)
+                            REFERENCES USERS(cedula))
+                        ''')
+        db.commit()
+    except:
+        print("Failed to create HISTORIAL table")
+
+createTableHistorial()
