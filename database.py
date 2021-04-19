@@ -1,4 +1,5 @@
 import sqlite3 as sql
+import datetime as dt
 
 def createDB():
     try:
@@ -7,7 +8,7 @@ def createDB():
     except:
         print("Failed to create Buses System Database")
 
-createDB()
+# createDB()
 
 
 
@@ -20,7 +21,7 @@ def createTable():
                         cedula text not null unique,
                         nombre text not null,
                         email text not null,
-                        fecha_nacimiento text not null,
+                        fecha_nacimiento date not null,
                         genero text not null,
                         password text not null,
                         role text not null
@@ -30,19 +31,19 @@ def createTable():
     except:
         print("Failed to create users table")
 
-createTable()
+# createTable()
 
 db = sql.connect('buses_system.db')
 
 usuario = (
-    (1,'1301301301','Joseph Méndez','joseph.mendez@gmail.com','14-02-1996','masculino','12345','admin')
+    (1,'1301301301','Joseph Méndez','joseph.mendez@gmail.com',dt.date(1996,2,14),'masculino','12345','admin')
 )
 
-with db:
-    cur = db.cursor()
-    cur.execute('INSERT INTO users VALUES (?,?,?,?,?,?,?,?)', usuario)
-    print("USERS Created")
-    db.commit()
+# with db:
+#     cur = db.cursor()
+#     cur.execute('INSERT INTO users VALUES (?,?,?,?,?,?,?,?)', usuario)
+#     print("USERS Created")
+#     db.commit()
     # db.close()
 
 # TODO
@@ -63,7 +64,7 @@ def createTableTerminales():
     except:
         print("Failed to create terminales table")
 
-createTableTerminales()
+# createTableTerminales()
 
 def createTableUnidadesBuses():
     try:
@@ -80,7 +81,7 @@ def createTableUnidadesBuses():
     except:
         print("Failed to create Unidades table")
 
-createTableUnidadesBuses()
+# createTableUnidadesBuses()
 
 def createTableRutas():
     try:
@@ -91,11 +92,11 @@ def createTableRutas():
                         id_terminal integer not null,
                         placa_bus text not null,
                         precio real not null,
-                        fecha_hora_salida text not null,
+                        fecha_hora_salida datetime not null,
                         origen text not null,
-                        fecha_hora_llegada text not null,
+                        fecha_hora_llegada datetime not null,
                         destino text not null,
-                        duracion text not null,
+                        duracion time not null,
                         FOREIGN KEY (id_terminal)
                             REFERENCES TERMINALES(id),
                         FOREIGN KEY (placa_bus)
@@ -105,5 +106,31 @@ def createTableRutas():
     except:
         print("Failed to create Rutas table")
 
-createTableRutas()
+# createTableRutas()
 
+def createTableHistorial():
+    try:
+        db = sql.connect('buses_system.db')
+        cur = db.cursor()
+        cur.execute('''CREATE TABLE HISTORIAL
+                        (id integer primary key AUTOINCREMENT,
+                        cedula text not null,
+                        id_ruta integer not null,
+                        lugar_salida text not null,
+                        lugar_llegada text not null,
+                        lugar_intermedio text,
+                        fecha_hora_compra_ticket datetime not null,
+                        cantidad_boletos integer not null,
+                        asientos text not null,
+                        duracion time not null,
+                        costo_total real not null,
+                        FOREIGN KEY (id_ruta)
+                            REFERENCES RUTAS(id),
+                        FOREIGN KEY (cedula)
+                            REFERENCES USERS(cedula))
+                        ''')
+        db.commit()
+    except:
+        print("Failed to create HISTORIAL table")
+
+createTableHistorial()

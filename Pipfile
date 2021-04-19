@@ -4,7 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-colorama = "*"
+colorama = "==0.4.4"
+py3dns = "==3.2.1"
+validate_email = "==1.3"
+pyinstaller = "*"
 
 [dev-packages]
 
