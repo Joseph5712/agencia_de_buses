@@ -8,7 +8,7 @@ def createDB():
     except:
         print("Failed to create Buses System Database")
 
-# createDB()
+createDB()
 
 
 
@@ -31,7 +31,7 @@ def createTable():
     except:
         print("Failed to create users table")
 
-# createTable()
+createTable()
 
 db = sql.connect('buses_system.db')
 
@@ -39,12 +39,12 @@ usuario = (
     (1,'1301301301','Joseph Méndez','joseph.mendez@gmail.com',dt.date(1996,2,14),'masculino','12345','admin')
 )
 
-# with db:
-#     cur = db.cursor()
-#     cur.execute('INSERT INTO users VALUES (?,?,?,?,?,?,?,?)', usuario)
-#     print("USERS Created")
-#     db.commit()
-    # db.close()
+with db:
+    cur = db.cursor()
+    cur.execute('INSERT INTO users VALUES (?,?,?,?,?,?,?,?)', usuario)
+    print("USERS Created")
+    db.commit()
+    db.close()
 
 # TODO
 # executemany -> Insert many data
@@ -64,7 +64,7 @@ def createTableTerminales():
     except:
         print("Failed to create terminales table")
 
-# createTableTerminales()
+createTableTerminales()
 
 def createTableUnidadesBuses():
     try:
@@ -81,7 +81,7 @@ def createTableUnidadesBuses():
     except:
         print("Failed to create Unidades table")
 
-# createTableUnidadesBuses()
+createTableUnidadesBuses()
 
 def createTableRutas():
     try:
@@ -106,7 +106,7 @@ def createTableRutas():
     except:
         print("Failed to create Rutas table")
 
-# createTableRutas()
+createTableRutas()
 
 def createTableHistorial():
     try:
@@ -115,7 +115,7 @@ def createTableHistorial():
         cur.execute('''CREATE TABLE HISTORIAL
                         (id integer primary key AUTOINCREMENT,
                         cedula text not null,
-                        id_ruta integer not null,
+                        id_rutla ela integer not null,
                         lugar_salida text not null,
                         lugar_llegada text not null,
                         lugar_intermedio text,
