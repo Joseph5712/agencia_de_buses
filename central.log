@@ -1,0 +1,49 @@
+06:43:05: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fd5ac9db0d0>
+06:43:05: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fd5aaac6180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:43:05: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fd5ac9d7040; closed: 0>
+06:43:05: DEBUG [UserDao.py:36] User registred: User [idUser: None - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+06:43:05: DEBUG [CursorPool.py:24] Commit running
+06:43:05: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fd5aaac6180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:43:39: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fe10e0b29a0>
+06:43:39: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fe10c16d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:43:39: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fe10e07d040; closed: 0>
+06:43:39: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:43:39: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fe10c16d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:43:39: ERROR [UserDao.py:28] Error happened while getting all users
+06:44:24: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fd7a2c939a0>
+06:44:24: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fd7a0d4d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:44:24: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fd7a2c5e040; closed: 0>
+06:44:24: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:44:24: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fd7a0d4d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:44:24: ERROR [UserDao.py:28] Error happened while getting all users
+06:44:58: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f461b4819a0>
+06:44:58: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f461953b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:44:58: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f461b44c040; closed: 0>
+06:44:58: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:44:58: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f461953b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:44:58: ERROR [UserDao.py:28] Error happened while getting all users
+06:45:44: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f4c1bdcc9a0>
+06:45:44: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f4c19e86180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:45:44: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f4c1bd97040; closed: 0>
+06:45:44: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:45:44: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f4c19e86180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:45:44: ERROR [UserDao.py:28] Error happened while getting all users
+06:46:41: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f85931479a0>
+06:46:41: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8591201180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:46:41: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8593112040; closed: 0>
+06:46:41: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:46:41: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8591201180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:46:41: ERROR [UserDao.py:28] Error happened while getting all users
+06:47:28: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f29049209a0>
+06:47:28: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f29029da180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:47:28: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f29048eb040; closed: 0>
+06:47:28: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: __init__() got an unexpected keyword argument 'idUser'
+06:47:28: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f29029da180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:47:28: ERROR [UserDao.py:28] Error happened while getting all users
+06:48:38: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fe74c3909a0>
+06:48:38: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fe74a44a180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:48:38: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fe74c35b040; closed: 0>
+06:48:38: DEBUG [UserDao.py:24] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+06:48:38: DEBUG [UserDao.py:25] Getting Users Succesfully
+06:48:38: DEBUG [CursorPool.py:24] Commit running
+06:48:38: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fe74a44a180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
