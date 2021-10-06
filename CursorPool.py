@@ -18,7 +18,7 @@ class CursorPool:
     def __exit__(self, typeException, valueException, traceback):
         if valueException:
             self._connection.rollback()
-            log.error(f"Error happened while executing query. We do rollback")
+            log.error(f"Error happened while executing query. We do rollback. Value Exception: {valueException}")
         else:
             self._connection.commit()
             log.debug(f"Commit running")
