@@ -1,13 +1,11 @@
-from _typeshed import Self
-
-
 class User:
-    def __init__(self,id_User=None,username:str=None,password:str=None,name:str=None,lastName:str=None) -> object:
-        self._idUser = id_User
+    def __init__(self,idUser=None,username:str=None,password:str=None,name:str=None,lastName:str=None,admin:bool=False) -> object:
+        self._idUser = idUser
         self._username = username
         self._password = password
         self._name = name
         self._lastname = lastName
+        self._isAdmin = admin
     
     @property
     def idUser(self):
@@ -45,6 +43,14 @@ class User:
     def setLastName(self,newLastName):
         self._lastname = newLastName
     
+    @property
+    def isAdmin(self):
+        return self._isAdmin
+    
+    @isAdmin.setter
+    def setAdmin(self,newStatusAdmin):
+        self._isAdmin = newStatusAdmin
+        
     def __str__(self) -> str:
         message:str = f"User [idUser: {self.idUser} - username: {self.username} - password: {self.password} - names: {self.name} - lastName: {self.lastName}]"
         return message
