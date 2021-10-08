@@ -47,3 +47,93 @@
 06:48:38: DEBUG [UserDao.py:25] Getting Users Succesfully
 06:48:38: DEBUG [CursorPool.py:24] Commit running
 06:48:38: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fe74a44a180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f1f198c57c0>
+10:34:49: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f1f179ba180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f1f198ce040; closed: 0>
+10:34:49: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: relation "places" does not exist
+LINE 1: INSERT INTO places(name) VALUES('San José')
+                    ^
+
+10:34:49: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f1f179ba180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: ERROR [PlaceToTravelDao.py:37] Error happened while inserting place: relation "places" does not exist
+LINE 1: INSERT INTO places(name) VALUES('San José')
+                    ^
+
+10:34:49: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f1f179ba180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f1f198ce040; closed: 0>
+10:34:49: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: relation "places" does not exist
+LINE 1: SELECT * FROM places
+                      ^
+
+10:34:49: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f1f179ba180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: ERROR [PlaceToTravelDao.py:26] Error happened while getting all places to travel: relation "places" does not exist
+LINE 1: SELECT * FROM places
+                      ^
+
+10:36:35: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ff5efbc37c0>
+10:36:35: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff5edcb8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:36:35: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff5efbcc040; closed: 0>
+10:36:35: DEBUG [PlaceToTravelDao.py:34] Place inserted: San José
+10:36:35: DEBUG [CursorPool.py:24] Commit running
+10:36:35: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff5edcb8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:36:35: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff5edcb8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:36:35: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff5efbcc040; closed: 0>
+10:36:35: DEBUG [PlaceToTravelDao.py:23] Getting Users Succesfully
+10:36:35: DEBUG [CursorPool.py:24] Commit running
+10:36:35: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff5edcb8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:39:33: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f64d01737c0>
+10:39:33: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f64ce267180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:39:33: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f64d017c040; closed: 0>
+10:39:33: DEBUG [PlaceToTravelDao.py:23] Getting Users Succesfully
+10:39:33: DEBUG [CursorPool.py:24] Commit running
+10:39:33: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f64ce267180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:40:02: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f9dd5f0f7c0>
+10:40:02: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f9dd4003180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:40:02: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f9dd5f18040; closed: 0>
+10:40:02: DEBUG [PlaceToTravelDao.py:23] Getting Users Succesfully
+10:40:02: DEBUG [CursorPool.py:24] Commit running
+10:40:02: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f9dd4003180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:40:02: DEBUG [PlaceToTravelDao.py:44] Place: id1 - namePlace: San José
+10:46:48: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f0a5a5547f0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Alajuela
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Heredia
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Cartago
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: San Carlos
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Puntarenas
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Limón
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id1 - namePlace: San José
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id2 - namePlace: Alajuela
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id3 - namePlace: Heredia
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id4 - namePlace: Cartago
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id5 - namePlace: San Carlos
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id6 - namePlace: Puntarenas
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id7 - namePlace: Limón
+10:46:48: DEBUG [PlaceToTravelDao.py:24] Getting Users Succesfully
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
