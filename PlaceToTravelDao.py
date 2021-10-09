@@ -44,7 +44,7 @@ class PlaceToTravelDao:
                     )
                     places.append(place)
                     log.debug(place)
-                log.debug("Getting Users Succesfully")
+                log.debug("Getting Places Succesfully")
                 return places
         except Exception as e:
             log.error(f"Error happened while getting all places to travel: {e}")
@@ -66,12 +66,12 @@ if __name__ == "__main__":
     place3:PlaceToTravel = PlaceToTravel(namePlace="Cartago")
     place4:PlaceToTravel = PlaceToTravel(namePlace="San Carlos")
     place5:PlaceToTravel = PlaceToTravel(namePlace="Puntarenas")
-    place6:PlaceToTravel = PlaceToTravel(namePlace="Limón",idPlace=7)
+    place6:PlaceToTravel = PlaceToTravel(namePlace="Limón")
     place7:PlaceToTravel = PlaceToTravel(namePlace="Testing Place",idPlace=8)
     places:list = [place1,place2,place3,place4,place5,place6]
     # for place in places:
-        # PlaceToTravelDao.insertPlace(place)
+    #     PlaceToTravelDao.insertPlace(place)
     # PlaceToTravelDao.updatePlace(place6)
     # PlaceToTravelDao.insertPlace(place7)
-    PlaceToTravelDao.deletePlace(place7)
+    # PlaceToTravelDao.deletePlace(place7)
     PlaceToTravelDao.getAllPlaces()
