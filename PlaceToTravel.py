@@ -16,5 +16,5 @@ class PlaceToTravel:
         self._namePlace = newNamePlace
     
     def __str__(self) -> str:
-        message:str = f"Place: id{self.idPlace} - namePlace: {self.namePlace}"
+        message:str = f"Place: id: {self.idPlace} - namePlace: {self.namePlace}"
         return message
