@@ -63,9 +63,11 @@ class UserDao:
             log.error(f"Error happened while inserting user: {e}")
 
 if __name__ == "__main__":
-    # user1:User = User(username="1315490977",password="789123",name="Gabriel",lastName="Auz",admin=False,idUser=2)
-    user1:User = User(username="9999999999",password="9999999999",name="User",lastName="Test",idUser=3)
-    # UserDao.insertUser(user1)
+    adminUser:User = User(username="1315490969",password="12345",name="Luis",lastName="Auz",admin=True)
+    user1:User = User(username="1315490977",password="789123",name="Gabriel",lastName="Auz",admin=False,idUser=2)
+    # user1:User = User(username="9999999999",password="9999999999",name="User",lastName="Test",idUser=3)
+    UserDao.insertUser(user1)
     # UserDao.updateUser(user1)
-    UserDao.deleteUser(user1)
+    # UserDao.insertUser(adminUser)
+    # UserDao.deleteUser(user1)
     UserDao.getAllUsers()
