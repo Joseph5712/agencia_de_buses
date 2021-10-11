@@ -499,3 +499,37 @@ HINT:  Perhaps you meant to reference the column "users.idUser".
 05:28:08: DEBUG [PlaceToTravelDao.py:47] Getting Places Succesfully
 05:28:08: DEBUG [CursorPool.py:24] Commit running
 05:28:08: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc71137d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:52:02: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fd1a2636ca0>
+10:52:02: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fd1a06d2180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:52:02: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fd1a25eb040; closed: 0>
+10:52:02: DEBUG [Login.py:28] None
+10:52:02: DEBUG [CursorPool.py:24] Commit running
+10:52:02: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fd1a06d2180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:52:37: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f6de3328ca0>
+10:52:37: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f6de13c4180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:52:37: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f6de32dd040; closed: 0>
+10:52:37: DEBUG [Login.py:28] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+10:52:37: DEBUG [CursorPool.py:24] Commit running
+10:52:37: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f6de13c4180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:54:13: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fa735ebaca0>
+10:54:13: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fa733f56180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:54:13: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fa735e6f040; closed: 0>
+10:54:13: DEBUG [Login.py:28] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+10:54:13: DEBUG [Login.py:29] <class 'tuple'>
+10:54:13: DEBUG [CursorPool.py:24] Commit running
+10:54:13: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fa733f56180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:06:33: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f475c26a550>
+11:06:33: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f475a201180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:06:33: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f475a21e040; closed: 0>
+11:06:33: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: validationUsername() takes 1 positional argument but 2 were given
+11:06:33: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f475a201180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:06:33: ERROR [Login.py:50] Error happened while login user (1315490969): validationUsername() takes 1 positional argument but 2 were given
+11:06:33: DEBUG [Login.py:58] The user 1315490969 is a normal user
+11:08:17: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fabb9be4550>
+11:08:17: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fabb7b7b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:08:17: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fabb9a92040; closed: 0>
+11:08:17: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+11:08:17: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: validationUsername() takes 1 positional argument but 2 were given
+11:08:17: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fabb7b7b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:08:17: ERROR [Login.py:51] Error happened while login user 1315490969: validationUsername() takes 1 positional argument but 2 were given
+11:08:17: DEBUG [Login.py:59] The user 1315490969 is a normal user
