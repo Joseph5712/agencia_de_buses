@@ -1,50 +1,60 @@
-import psycopg2
+from CursorPool import CursorPool
+from logger_base import log
+from User import User
 
 class Login:
-    POSITION_USER:int = 0
-    POSITION_PASSWORD:int = 1
-    CONNECTION = psycopg2.connect(
-                        user='postgres',
-                        password='postgres',
-                        host='127.0.0.1',
-                        port=5432,
-                        database='agencia_buses'
-                        )
-    LOGINSENTENCE:str = 'SELECT * FROM public."Users" WHERE username=%s AND password=%s'
 
-    def __init__(self, credentials:list) -> bool:
-        self._credentials:list = credentials
+    _LOGIN_USERNAME:str = "SELECT * FROM users WHERE username=%s"
+    _LOGIN:str = "SELECT * FROM users WHERE username=%s AND password=%s"
+
+    def __init__(self,username:str,password:str) -> object:
+        self._username:str = username
+        self._password:str = password
+
+    @property
+    def username(self):
+        return self._username
     
     @property
-    def credentials(self):
-        return self._credentials
-    
-    def loginSystem(self):
-        user:str = self.credentials[self.POSITION_USER]
-        password:str = self.credentials[self.POSITION_PASSWORD]
-        connection:object = self.CONNECTION
-        try:
-            with connection:
-                with connection.cursor() as cursor:
-                    sentence:str = self.LOGINSENTENCE
-                    cursor.execute(sentence,(user,password))
-                    register = cursor.fetchone()
-                    return register
-        except Exception as e:
-            print(f"Error happened: {e}")
-        finally:
-            connection.close()
-    
-    def successLogin(self):
-        loginSystem  = self.loginSystem()
-        if loginSystem == None:
-            return False
+    def password(self):
+        return self._password
+
+    def validationUsername(result:tuple):
+        if result!=None:
+            return 1
         else:
-            return True
+            log.error(f"Username is not correct")
+            return 0
+    
+    def validationPassword(self,result:tuple):
+        if result!=None:
+            log.debug(f"User {self.username} logged succesfully")
+            return 1
+        else:
+            log.error(f"Password incorrect to user {self.username}")
 
+    def login(self):
+        try:
+            with CursorPool() as cursor:
+                values:tuple = (self.username,)
+                cursor.execute(self._LOGIN_USERNAME,values)
+                result_login_username:tuple = cursor.fetchone()
+                log.debug(result_login_username)
+                if self.validationUsername(result_login_username) == 1:
+                    newValues:tuple = (self.username,self.password)
+                    cursor.execute(self._LOGIN,newValues)
+                    result_login:tuple = cursor.fetchone()
+                    user:User = User(result_login[0])
+                    isAdmin:bool = user.isAdmin()
+                    return isAdmin
+        except Exception as e:
+            log.error(f"Error happened while login user {self.username}: {e}")
 
-if __name__ == '__main__':
-    credentials:list = ['1315490969','1311311311']
-    newLogin:Login = Login(credentials)
-    isLogeed = newLogin.successLogin()
-    print(isLogeed)
+if __name__ == "__main__":
+    login:Login = Login("1315490969","12345")
+    isAdmin:bool = Login.login(login)
+    if isAdmin:
+        log.debug(f"The user {login.username} is Admin")
+    else:
+        log.debug(f"The user {login.username} is a normal user")
+    
