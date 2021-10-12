@@ -627,3 +627,19 @@ HINT:  Perhaps you meant to reference the column "users.idUser".
 07:19:57: DEBUG [CursorPool.py:24] Commit running
 07:19:57: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f6c6d100180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
 07:19:57: DEBUG [Login.py:64] The user 1315490969 is Admin
+02:55:53: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f8b28b5d250>
+02:55:53: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8b26c9e180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+02:55:53: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8b28baf040; closed: 0>
+02:55:53: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 12345 - names: Luis - lastName: Auz]
+02:55:53: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+02:55:53: DEBUG [UserDao.py:49] Getting Users Succesfully
+02:55:53: DEBUG [CursorPool.py:24] Commit running
+02:55:53: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8b26c9e180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:09:11: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f044100eeb0>
+05:09:11: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f045213e540; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:09:11: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f04506947c0; closed: 0>
+05:09:11: DEBUG [Login.py:42] None
+05:09:11: ERROR [Login.py:26] Username is not correct
+05:09:11: DEBUG [CursorPool.py:24] Commit running
+05:09:11: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f045213e540; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:09:25: DEBUG [Login.py:65] The user 131 is a normal user
