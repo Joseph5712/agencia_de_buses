@@ -19,7 +19,7 @@ class Login:
     def password(self):
         return self._password
 
-    def validationUsername(result:tuple):
+    def validationUsername(self,result:tuple):
         if result!=None:
             return 1
         else:
@@ -44,8 +44,15 @@ class Login:
                     newValues:tuple = (self.username,self.password)
                     cursor.execute(self._LOGIN,newValues)
                     result_login:tuple = cursor.fetchone()
-                    user:User = User(result_login[0])
-                    isAdmin:bool = user.isAdmin()
+                    user_result = result_login
+                    user:User = User(
+                        result_login[0],
+                        result_login[1],
+                        result_login[2],
+                        result_login[3],
+                        result_login[4],
+                        result_login[5])
+                    isAdmin:bool = user.isAdmin
                     return isAdmin
         except Exception as e:
             log.error(f"Error happened while login user {self.username}: {e}")
