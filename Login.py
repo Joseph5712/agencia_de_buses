@@ -44,7 +44,6 @@ class Login:
                     newValues:tuple = (self.username,self.password)
                     cursor.execute(self._LOGIN,newValues)
                     result_login:tuple = cursor.fetchone()
-                    user_result = result_login
                     user:User = User(
                         result_login[0],
                         result_login[1],
@@ -64,4 +63,3 @@ if __name__ == "__main__":
         log.debug(f"The user {login.username} is Admin")
     else:
         log.debug(f"The user {login.username} is a normal user")
-    
