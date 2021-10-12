@@ -533,3 +533,97 @@ HINT:  Perhaps you meant to reference the column "users.idUser".
 11:08:17: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fabb7b7b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
 11:08:17: ERROR [Login.py:51] Error happened while login user 1315490969: validationUsername() takes 1 positional argument but 2 were given
 11:08:17: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:02:06: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f47fcaf47f0>
+07:02:06: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f47fabac180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:02:06: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f47fcac4040; closed: 0>
+07:02:06: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:02:06: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: validationUsername() takes 1 positional argument but 2 were given
+07:02:06: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f47fabac180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:02:06: ERROR [Login.py:51] Error happened while login user 1315490969: validationUsername() takes 1 positional argument but 2 were given
+07:02:06: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:04:25: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f5ce89277f0>
+07:04:25: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5ce69df180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:04:25: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f5ce88f7040; closed: 0>
+07:04:25: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:04:25: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:04:25: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5ce69df180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:04:25: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:04:25: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:04:58: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc526e5f160>
+07:04:58: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc524fa0180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:04:58: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc526eb1040; closed: 0>
+07:04:58: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 12345 - names: Luis - lastName: Auz]
+07:04:58: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+07:04:58: DEBUG [UserDao.py:49] Getting Users Succesfully
+07:04:58: DEBUG [CursorPool.py:24] Commit running
+07:04:58: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc524fa0180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:05:15: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f3c294997f0>
+07:05:15: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f3c27551180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:05:15: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f3c29469040; closed: 0>
+07:05:15: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:05:15: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:05:15: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f3c27551180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:05:15: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:05:15: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:06:46: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc17c4267f0>
+07:06:46: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc17a4de180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:06:46: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc17c3f6040; closed: 0>
+07:06:46: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:06:46: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:06:46: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc17a4de180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:06:46: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:06:46: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:07:03: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f65f5faa7f0>
+07:07:03: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f65f4062180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:07:03: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f65f5f7a040; closed: 0>
+07:07:03: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:07:03: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:07:03: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f65f4062180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:07:03: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:07:03: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:08:18: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc825f7a7f0>
+07:08:18: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc824032180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:18: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc825f4a040; closed: 0>
+07:08:18: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:08:18: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:08:18: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc824032180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:18: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:08:18: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:08:35: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fb40a7db7f0>
+07:08:35: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fb408893180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:35: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fb40a7ab040; closed: 0>
+07:08:35: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:08:35: DEBUG [CursorPool.py:24] Commit running
+07:08:35: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fb408893180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:35: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:08:57: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f74053f97f0>
+07:08:57: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f74034b1180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:57: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f74053c9040; closed: 0>
+07:08:57: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:08:57: DEBUG [Login.py:48] User [idUser: 1 - username: None - password: None - names: None - lastName: None]
+07:08:57: DEBUG [CursorPool.py:24] Commit running
+07:08:57: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f74034b1180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:57: DEBUG [Login.py:60] The user 1315490969 is a normal user
+07:10:12: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f537602d7f0>
+07:10:12: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f53740e5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:10:12: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f5375ffd040; closed: 0>
+07:10:12: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:10:12: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'int' object is not iterable
+07:10:12: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f53740e5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:10:12: ERROR [Login.py:55] Error happened while login user 1315490969: 'int' object is not iterable
+07:10:12: DEBUG [Login.py:63] The user 1315490969 is a normal user
+07:10:40: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f3152a847f0>
+07:10:40: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f3150b3c180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:10:40: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f3152a54040; closed: 0>
+07:10:40: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:10:40: DEBUG [Login.py:51] User [idUser: 1 - username: None - password: None - names: None - lastName: None]
+07:10:40: DEBUG [CursorPool.py:24] Commit running
+07:10:40: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f3150b3c180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:10:40: DEBUG [Login.py:63] The user 1315490969 is a normal user
+07:19:57: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f6c6f0487f0>
+07:19:57: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f6c6d100180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:19:57: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f6c6f018040; closed: 0>
+07:19:57: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:19:57: DEBUG [CursorPool.py:24] Commit running
+07:19:57: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f6c6d100180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:19:57: DEBUG [Login.py:64] The user 1315490969 is Admin
