@@ -643,3 +643,10 @@ HINT:  Perhaps you meant to reference the column "users.idUser".
 05:09:11: DEBUG [CursorPool.py:24] Commit running
 05:09:11: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f045213e540; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
 05:09:25: DEBUG [Login.py:65] The user 131 is a normal user
+06:08:48: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f6521cac310>
+06:08:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f651fc44180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:08:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f6521b5b040; closed: 0>
+06:08:48: DEBUG [Login.py:48] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+06:08:48: DEBUG [Login.py:36] User 1315490969 logged succesfully
+06:08:48: DEBUG [CursorPool.py:24] Commit running
+06:08:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f651fc44180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
