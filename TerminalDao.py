@@ -25,7 +25,7 @@ class TerminalDao:
             log.error(f"Error happened while searching quantity terminals by place: {e}")
     
     @classmethod
-    def asignNumberTerminal(cls,terminal:Terminal) -> int:
+    def asignNumberTerminal(cls,terminal:Terminal) -> int or bool:
         try:
             quantity:int = cls.terminalsByPlace(terminal)
             if quantity == 0:
@@ -39,7 +39,9 @@ class TerminalDao:
                     if number == 1:
                         return number+1
                     elif number == 2:
-                        return number-1                
+                        return number-1
+                    else:
+                        return False                
         except Exception as e:
             log.error(f"Error happened while asigning number terminal: {e}")
     
@@ -58,7 +60,7 @@ class TerminalDao:
     def updateTerminal(cls,terminal:Terminal):
         try:
             with CursorPool() as cursor:
-                values:tuple = (terminal.name,terminal.place,terminal.number,terminal.idTerminal)
+                values:tuple = (terminal.name,terminal.place,cls.asignNumberTerminal(terminal),terminal.idTerminal)
                 cursor.execute(cls._UPDATE,values)
                 log.debug(f"Terminal {terminal.name} updated succesfully")
                 cursor.rowcount
