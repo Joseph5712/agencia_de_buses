@@ -25,6 +25,25 @@ class TerminalDao:
             log.error(f"Error happened while searching quantity terminals by place: {e}")
     
     @classmethod
+    def asignNumberTerminal(cls,terminal:Terminal) -> int:
+        try:
+            quantity:int = cls.terminalsByPlace(terminal)
+            if quantity == 0:
+                return quantity+1
+            elif quantity == 1:
+                with CursorPool() as cursor:
+                    values:tuple = (terminal.place,)
+                    cursor.execute(cls._SELECT_TERMINAL_BY_PLACE,values)
+                    register:tuple = cursor.fetchone()
+                    number:int = register[3]
+                    if number == 1:
+                        return number+1
+                    elif number == 2:
+                        return number-1                
+        except Exception as e:
+            log.error(f"Error happened while asigning number terminal: {e}")
+    
+    @classmethod
     def deleteTerminal(cls,terminal:Terminal):
         try:
             with CursorPool() as cursor:
@@ -50,7 +69,7 @@ class TerminalDao:
     def insertTerminal(cls,terminal:Terminal):
         try:
             with CursorPool() as cursor:
-                values:tuple = (terminal.name,terminal.place,terminal.number)
+                values:tuple = (terminal.name,terminal.place,cls.asignNumberTerminal(terminal))
                 cursor.execute(cls._INSERT,values)
                 log.debug(f"Terminal inserted: {terminal.name}")
                 return cursor.rowcount
@@ -82,8 +101,8 @@ class TerminalDao:
 if __name__ == "__main__":
     terminal1:Terminal = Terminal(name="Terminal One",place=2,number=1,idTerminal=1)
     # TerminalDao.insertTerminal(terminal1)
-    terminal2:Terminal = Terminal(name="Terminal Testing",place=1,number=2)
+    terminal2:Terminal = Terminal(name="Terminal #2 Testing Place Two",place=2)
     # TerminalDao.updateTerminal(terminal1)
-    # TerminalDao.insertTerminal(terminal2)
+    TerminalDao.insertTerminal(terminal2)
     TerminalDao.getAllTerminals()
-    TerminalDao.terminalsByPlace(terminal1)
+    # TerminalDao.asignNumberTerminal(terminal2)
