@@ -34,5 +34,5 @@ class Terminal:
         self._number = newNumber
     
     def __str__(self) -> str:
-        message:str = f"User [idTerminal: {self.idTerminal} - name: {self.name} - place: {self.place} - number: {self.number}]"
+        message:str = f"Terminal [idTerminal: {self.idTerminal} - name: {self.name} - place: {self.place} - number: {self.number}]"
         return message
