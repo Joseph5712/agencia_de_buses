@@ -6,6 +6,30 @@ class TerminalDao:
 
     _SELECT:str = "SELECT * FROM terminals"
     _INSERT:str = "INSERT INTO terminals(name,place_id,number) VALUES(%s,%s,%s)"
+    _UPDATE:str = "UPDATE terminals SET name=%s,place_id=%s,number=%s WHERE id_terminal=%s"
+    _DELETE:str = "DELETE FROM terminals WHERE id_terminal=%s"
+
+    @classmethod
+    def deleteTerminal(cls,terminal:Terminal):
+        try:
+            with CursorPool() as cursor:
+                values:tuple = (terminal.idTerminal,)
+                cursor.execute(cls._DELETE,values)
+                log.debug(f"Terminal {terminal.name} (id: {terminal.idTerminal} deleted succesffuly")
+                cursor.rowcount
+        except Exception as e:
+            log.error(f"Error happened while deleting terminal {terminal.name}: {e}")
+
+    @classmethod
+    def updateTerminal(cls,terminal:Terminal):
+        try:
+            with CursorPool() as cursor:
+                values:tuple = (terminal.name,terminal.place,terminal.number,terminal.idTerminal)
+                cursor.execute(cls._UPDATE,values)
+                log.debug(f"Terminal {terminal.name} updated succesfully")
+                cursor.rowcount
+        except Exception as e:
+            log.error(f"Error happened while updating terminal {terminal.name}: {e}")
 
     @classmethod
     def insertTerminal(cls,terminal:Terminal):
@@ -41,6 +65,9 @@ class TerminalDao:
             log.error(f"Error while getting terminals: {e}")
 
 if __name__ == "__main__":
-    terminal1:Terminal = Terminal(name="Terminal 1",place=1,number=1)
-    TerminalDao.insertTerminal(terminal1)
+    terminal1:Terminal = Terminal(name="Terminal One",place=1,number=1,idTerminal=1)
+    # TerminalDao.insertTerminal(terminal1)
+    terminal2:Terminal = Terminal(name="Terminal Testing",place=1,number=2)
+    # TerminalDao.updateTerminal(terminal1)
+    TerminalDao.insertTerminal(terminal2)
     TerminalDao.getAllTerminals()
