@@ -9,6 +9,21 @@ class TerminalDao:
     _UPDATE:str = "UPDATE terminals SET name=%s,place_id=%s,number=%s WHERE id_terminal=%s"
     _DELETE:str = "DELETE FROM terminals WHERE id_terminal=%s"
 
+    _SELECT_TERMINAL_BY_PLACE:str = "SELECT * FROM terminals WHERE place_id=%s"
+
+    @classmethod
+    def terminalsByPlace(cls,terminal:Terminal) -> int:
+        try:
+            with CursorPool() as cursor:
+                values:tuple = (terminal.place,)
+                cursor.execute(cls._SELECT_TERMINAL_BY_PLACE,values)
+                registers:tuple = cursor.fetchall()
+                quantity:int = len(registers)
+                log.debug(f"Terminals in this place ({terminal.place}): {quantity}")
+                return quantity
+        except Exception as e:
+            log.error(f"Error happened while searching quantity terminals by place: {e}")
+    
     @classmethod
     def deleteTerminal(cls,terminal:Terminal):
         try:
@@ -65,9 +80,10 @@ class TerminalDao:
             log.error(f"Error while getting terminals: {e}")
 
 if __name__ == "__main__":
-    terminal1:Terminal = Terminal(name="Terminal One",place=1,number=1,idTerminal=1)
+    terminal1:Terminal = Terminal(name="Terminal One",place=2,number=1,idTerminal=1)
     # TerminalDao.insertTerminal(terminal1)
     terminal2:Terminal = Terminal(name="Terminal Testing",place=1,number=2)
     # TerminalDao.updateTerminal(terminal1)
-    TerminalDao.insertTerminal(terminal2)
+    # TerminalDao.insertTerminal(terminal2)
     TerminalDao.getAllTerminals()
+    TerminalDao.terminalsByPlace(terminal1)
