@@ -5,8 +5,8 @@ class Bus:
     LETTERS:list=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","X","Y","Z"]
 
     def __init__(self, capacity:int=None,terminal_id:int=None) -> object:
-        self._bus_plate = f"{random.choices(self.LETTERS,k=3)}{random.choices(self.NUMBERS,k=3)}"
-        self._capacity = self.validationCapacity(capacity)
+        self._bus_plate = self.asignPlate()
+        self._capacity = capacity
         self._terminal_id = terminal_id
     
     @property
@@ -21,15 +21,23 @@ class Bus:
     def setCapacity(self,newCapacity):
         self._capacity = newCapacity
     
+    @classmethod
+    def asignPlate(cls):
+        plateLetters:str = ''
+        plateNumbers:str = ''
+        plateListString:list(str) = random.choices(cls.LETTERS,k=3)
+        for plateString in plateListString:
+            plateLetters += plateString
+        plateListNumber:list = random.choices(cls.NUMBERS,k=3)
+        for plateNumber in plateListNumber:
+            plateNumbers += str(plateNumber)
+        plate:str = plateLetters+plateNumbers
+        return plate
+
+    
     @property
     def terminal_id(self):
         return self._terminal_id
-
-    def validationCapacity(capacity:int)-> int or bool:
-        if capacity > 0 and capacity <= 36:
-            return capacity
-        else:
-            return False
     
     def __str__(self) -> str:
         message:str = f"Bus: [bus_plate: {self.bus_plate} - capacity: {self.capacity} - terminal_id: {self.terminal_id}]"
