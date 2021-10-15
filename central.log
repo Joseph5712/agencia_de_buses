@@ -650,3 +650,33 @@ HINT:  Perhaps you meant to reference the column "users.idUser".
 06:08:48: DEBUG [Login.py:36] User 1315490969 logged succesfully
 06:08:48: DEBUG [CursorPool.py:24] Commit running
 06:08:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f651fc44180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:05:16: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f93ed50a8e0>
+12:05:16: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f93eb5b1400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:05:16: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f93eb4fc040; closed: 0>
+12:05:16: DEBUG [CursorPool.py:24] Commit running
+12:05:16: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f93eb5b1400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:10:59: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f72fed085e0>
+12:10:59: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f72fed09180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:10:59: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f7300c9c040; closed: 0>
+12:10:59: DEBUG [TerminalDao.py:97] Terminal [idTerminal: 1 - name: Terminal One - place: 1 - number: 1]
+12:10:59: DEBUG [TerminalDao.py:97] Terminal [idTerminal: 2 - name: Terminal Testing - place: 1 - number: 2]
+12:10:59: DEBUG [TerminalDao.py:97] Terminal [idTerminal: 3 - name: Terminal #1 Testing Place Two - place: 2 - number: 2]
+12:10:59: DEBUG [TerminalDao.py:97] Terminal [idTerminal: 4 - name: Terminal #2 Testing Place Two - place: 2 - number: 1]
+12:10:59: DEBUG [TerminalDao.py:98] Getting Terminals Succesfully
+12:10:59: DEBUG [CursorPool.py:24] Commit running
+12:10:59: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f72fed09180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:24: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fbe75cb73d0>
+12:11:24: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fbe75cab400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:24: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fbe77ca3040; closed: 0>
+12:11:24: DEBUG [CursorPool.py:24] Commit running
+12:11:24: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fbe75cab400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:54: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ffa19e4a3a0>
+12:11:54: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ffa19e3d400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:54: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ffa1be35040; closed: 0>
+12:11:54: DEBUG [BusDao.py:17] Bus LMN798 registered succesfully
+12:11:54: DEBUG [CursorPool.py:24] Commit running
+12:11:54: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ffa19e3d400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:54: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ffa19e3d400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:54: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ffa1be35040; closed: 0>
+12:11:54: DEBUG [CursorPool.py:24] Commit running
+12:11:54: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ffa19e3d400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
