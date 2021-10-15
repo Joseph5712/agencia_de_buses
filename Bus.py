@@ -4,8 +4,11 @@ class Bus:
     NUMBERS:list=[0,1,2,3,4,5,6,7,8,9]
     LETTERS:list=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","X","Y","Z"]
 
-    def __init__(self, capacity:int=None,terminal_id:int=None) -> object:
-        self._bus_plate = self.asignPlate()
+    def __init__(self, bus_plate:str=None, capacity:int=None,terminal_id:int=None) -> object:
+        if bus_plate == None:
+            self._bus_plate = self.asignPlate()
+        else:
+            self._bus_plate = bus_plate
         self._capacity = capacity
         self._terminal_id = terminal_id
     
