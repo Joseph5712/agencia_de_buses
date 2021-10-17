@@ -15,7 +15,8 @@ class BusDao:
             with CursorPool() as cursor:
                 values:tuple = (terminal_id,)
                 cursor.execute(cls._COUNT_TERMINAL,values)
-                quantity:int = cursor.fetchone()
+                result:tuple = cursor.fetchone()
+                quantity:int = result[0]
                 if quantity == 0:
                     log.debug(f"Don't exist bus on terminal with id:{terminal_id}")
                 elif quantity == 1:
