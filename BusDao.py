@@ -51,11 +51,15 @@ class BusDao:
     @classmethod
     def insertBus(cls,bus:Bus):
         try:
-            with CursorPool() as cursor:
-                values:tuple = (bus.bus_plate,bus.capacity,bus.terminal_id)
-                cursor.execute(cls._INSERT,values)
-                log.debug(f"Bus {bus.bus_plate} registered succesfully")
-                return cursor.rowcount
+            quantity_bus_by_terminal:int = cls.verifyQuantBusByTerminal(bus.terminal_id)
+            if quantity_bus_by_terminal < 2:
+                with CursorPool() as cursor:
+                    values:tuple = (bus.bus_plate,bus.capacity,bus.terminal_id)
+                    cursor.execute(cls._INSERT,values)
+                    log.debug(f"Bus {bus.bus_plate} registered succesfully")
+                    return cursor.rowcount
+            else:
+                log.debug(f"Error happened while inserting bus. Exist {quantity_bus_by_terminal} buses on terminal with id {bus.terminal_id}")
         except Exception as e:
             log.error(f"Error happened while inserting bus: {e}")
 
