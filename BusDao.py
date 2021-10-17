@@ -7,6 +7,24 @@ class BusDao:
     _INSERT:str = "INSERT INTO buses(bus_plate,capacity,terminal_id) VALUES(%s,%s,%s)"
     _UPDATE:str = "UPDATE buses SET capacity=%s,terminal_id=%s WHERE bus_plate=%s"
     _DELETE:str = "DELETE FROM buses WHERE bus_plate=%s"
+    _COUNT_TERMINAL:str = 'SELECT COUNT("terminal_id") FROM buses where terminal_id=%s'
+
+    @classmethod
+    def verifyQuantBusByTerminal(cls,terminal_id:int):
+        try:
+            with CursorPool() as cursor:
+                values:tuple = (terminal_id,)
+                cursor.execute(cls._COUNT_TERMINAL,values)
+                quantity:int = cursor.fetchone()
+                if quantity == 0:
+                    log.debug(f"Don't exist bus on terminal with id:{terminal_id}")
+                elif quantity == 1:
+                    log.debug(f"Exist {quantity} terminal on terminal with id: {terminal_id}")
+                else:
+                    log.debug(f"Exist {quantity} terminals on terminal with id: {terminal_id}")
+                return quantity
+        except Exception as e:
+            log.error(f"Error happened while verifying quantity bus by terminal: {e}")
 
     @classmethod
     def deleteBus(cls,bus:Bus):
