@@ -1,0 +1,682 @@
+06:43:05: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fd5ac9db0d0>
+06:43:05: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fd5aaac6180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:43:05: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fd5ac9d7040; closed: 0>
+06:43:05: DEBUG [UserDao.py:36] User registred: User [idUser: None - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+06:43:05: DEBUG [CursorPool.py:24] Commit running
+06:43:05: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fd5aaac6180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:43:39: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fe10e0b29a0>
+06:43:39: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fe10c16d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:43:39: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fe10e07d040; closed: 0>
+06:43:39: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:43:39: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fe10c16d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:43:39: ERROR [UserDao.py:28] Error happened while getting all users
+06:44:24: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fd7a2c939a0>
+06:44:24: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fd7a0d4d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:44:24: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fd7a2c5e040; closed: 0>
+06:44:24: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:44:24: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fd7a0d4d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:44:24: ERROR [UserDao.py:28] Error happened while getting all users
+06:44:58: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f461b4819a0>
+06:44:58: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f461953b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:44:58: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f461b44c040; closed: 0>
+06:44:58: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:44:58: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f461953b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:44:58: ERROR [UserDao.py:28] Error happened while getting all users
+06:45:44: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f4c1bdcc9a0>
+06:45:44: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f4c19e86180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:45:44: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f4c1bd97040; closed: 0>
+06:45:44: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:45:44: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f4c19e86180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:45:44: ERROR [UserDao.py:28] Error happened while getting all users
+06:46:41: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f85931479a0>
+06:46:41: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8591201180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:46:41: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8593112040; closed: 0>
+06:46:41: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback
+06:46:41: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8591201180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:46:41: ERROR [UserDao.py:28] Error happened while getting all users
+06:47:28: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f29049209a0>
+06:47:28: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f29029da180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:47:28: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f29048eb040; closed: 0>
+06:47:28: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: __init__() got an unexpected keyword argument 'idUser'
+06:47:28: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f29029da180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:47:28: ERROR [UserDao.py:28] Error happened while getting all users
+06:48:38: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fe74c3909a0>
+06:48:38: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fe74a44a180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:48:38: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fe74c35b040; closed: 0>
+06:48:38: DEBUG [UserDao.py:24] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+06:48:38: DEBUG [UserDao.py:25] Getting Users Succesfully
+06:48:38: DEBUG [CursorPool.py:24] Commit running
+06:48:38: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fe74a44a180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f1f198c57c0>
+10:34:49: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f1f179ba180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f1f198ce040; closed: 0>
+10:34:49: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: relation "places" does not exist
+LINE 1: INSERT INTO places(name) VALUES('San José')
+                    ^
+
+10:34:49: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f1f179ba180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: ERROR [PlaceToTravelDao.py:37] Error happened while inserting place: relation "places" does not exist
+LINE 1: INSERT INTO places(name) VALUES('San José')
+                    ^
+
+10:34:49: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f1f179ba180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f1f198ce040; closed: 0>
+10:34:49: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: relation "places" does not exist
+LINE 1: SELECT * FROM places
+                      ^
+
+10:34:49: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f1f179ba180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:34:49: ERROR [PlaceToTravelDao.py:26] Error happened while getting all places to travel: relation "places" does not exist
+LINE 1: SELECT * FROM places
+                      ^
+
+10:36:35: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ff5efbc37c0>
+10:36:35: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff5edcb8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:36:35: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff5efbcc040; closed: 0>
+10:36:35: DEBUG [PlaceToTravelDao.py:34] Place inserted: San José
+10:36:35: DEBUG [CursorPool.py:24] Commit running
+10:36:35: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff5edcb8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:36:35: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff5edcb8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:36:35: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff5efbcc040; closed: 0>
+10:36:35: DEBUG [PlaceToTravelDao.py:23] Getting Users Succesfully
+10:36:35: DEBUG [CursorPool.py:24] Commit running
+10:36:35: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff5edcb8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:39:33: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f64d01737c0>
+10:39:33: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f64ce267180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:39:33: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f64d017c040; closed: 0>
+10:39:33: DEBUG [PlaceToTravelDao.py:23] Getting Users Succesfully
+10:39:33: DEBUG [CursorPool.py:24] Commit running
+10:39:33: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f64ce267180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:40:02: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f9dd5f0f7c0>
+10:40:02: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f9dd4003180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:40:02: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f9dd5f18040; closed: 0>
+10:40:02: DEBUG [PlaceToTravelDao.py:23] Getting Users Succesfully
+10:40:02: DEBUG [CursorPool.py:24] Commit running
+10:40:02: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f9dd4003180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:40:02: DEBUG [PlaceToTravelDao.py:44] Place: id1 - namePlace: San José
+10:46:48: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f0a5a5547f0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Alajuela
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Heredia
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Cartago
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: San Carlos
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Puntarenas
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:35] Place inserted: Limón
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:46:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f0a5c45a040; closed: 0>
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id1 - namePlace: San José
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id2 - namePlace: Alajuela
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id3 - namePlace: Heredia
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id4 - namePlace: Cartago
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id5 - namePlace: San Carlos
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id6 - namePlace: Puntarenas
+10:46:48: DEBUG [PlaceToTravelDao.py:23] Place: id7 - namePlace: Limón
+10:46:48: DEBUG [PlaceToTravelDao.py:24] Getting Users Succesfully
+10:46:48: DEBUG [CursorPool.py:24] Commit running
+10:46:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0a5a547180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:14:22: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7feee7767f40>
+07:14:22: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7feee57ec180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:14:22: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7feee76ff040; closed: 0>
+07:14:22: DEBUG [UserDao.py:58] User registred: User [idUser: None - username: 1315490977 - password: 123456 - names: Gabriel - lastName: Auz]
+07:14:22: DEBUG [CursorPool.py:24] Commit running
+07:14:22: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7feee57ec180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:14:22: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7feee57ec180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:14:22: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7feee76ff040; closed: 0>
+07:14:22: DEBUG [UserDao.py:46] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+07:14:22: DEBUG [UserDao.py:46] User [idUser: 2 - username: 1315490977 - password: 123456 - names: Gabriel - lastName: Auz]
+07:14:22: DEBUG [UserDao.py:47] Getting Users Succesfully
+07:14:22: DEBUG [CursorPool.py:24] Commit running
+07:14:22: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7feee57ec180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:15:29: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f14379d3ee0>
+07:15:29: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f1435a59180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:15:29: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f143796c040; closed: 0>
+07:15:29: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: tuple index out of range
+07:15:29: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f1435a59180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:15:29: ERROR [UserDao.py:29] Error happened while updating user: tuple index out of range
+07:15:29: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f1435a59180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:15:29: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f143796c040; closed: 0>
+07:15:29: DEBUG [UserDao.py:46] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+07:15:29: DEBUG [UserDao.py:46] User [idUser: 2 - username: 1315490977 - password: 123456 - names: Gabriel - lastName: Auz]
+07:15:29: DEBUG [UserDao.py:47] Getting Users Succesfully
+07:15:29: DEBUG [CursorPool.py:24] Commit running
+07:15:29: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f1435a59180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:17:04: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f3063331ee0>
+07:17:04: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f30613b4180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:17:04: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f30632c7040; closed: 0>
+07:17:04: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: column "iduser" does not exist
+LINE 1: ...89123',names='Gabriel Alfredo',lastname='Auz' WHERE idUser=2
+                                                               ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:17:04: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f30613b4180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:17:04: ERROR [UserDao.py:29] Error happened while updating user: column "iduser" does not exist
+LINE 1: ...89123',names='Gabriel Alfredo',lastname='Auz' WHERE idUser=2
+                                                               ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:17:04: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f30613b4180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:17:04: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f30632c7040; closed: 0>
+07:17:04: DEBUG [UserDao.py:46] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+07:17:04: DEBUG [UserDao.py:46] User [idUser: 2 - username: 1315490977 - password: 123456 - names: Gabriel - lastName: Auz]
+07:17:04: DEBUG [UserDao.py:47] Getting Users Succesfully
+07:17:04: DEBUG [CursorPool.py:24] Commit running
+07:17:04: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f30613b4180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:18:05: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f2ef1d48ee0>
+07:18:05: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f2eefdcb180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:18:05: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f2ef1cde040; closed: 0>
+07:18:05: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: column users.iduser does not exist
+LINE 1: ...123',names='Gabriel Alfredo',lastname='Auz' WHERE users.idUs...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:18:05: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f2eefdcb180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:18:05: ERROR [UserDao.py:29] Error happened while updating user: column users.iduser does not exist
+LINE 1: ...123',names='Gabriel Alfredo',lastname='Auz' WHERE users.idUs...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:18:05: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f2eefdcb180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:18:05: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f2ef1cde040; closed: 0>
+07:18:05: DEBUG [UserDao.py:46] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+07:18:05: DEBUG [UserDao.py:46] User [idUser: 2 - username: 1315490977 - password: 123456 - names: Gabriel - lastName: Auz]
+07:18:05: DEBUG [UserDao.py:47] Getting Users Succesfully
+07:18:05: DEBUG [CursorPool.py:24] Commit running
+07:18:05: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f2eefdcb180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:23:34: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fb6c3a12ee0>
+07:23:34: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fb6c1a95180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:23:34: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fb6c39a8040; closed: 0>
+07:23:34: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: column "iduser" does not exist
+LINE 1: ...89123',names='Gabriel Alfredo',lastname='Auz' WHERE idUser=2
+                                                               ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:23:34: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fb6c1a95180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:23:34: ERROR [UserDao.py:29] Error happened while updating user: column "iduser" does not exist
+LINE 1: ...89123',names='Gabriel Alfredo',lastname='Auz' WHERE idUser=2
+                                                               ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:23:34: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fb6c1a95180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:23:34: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fb6c39a8040; closed: 0>
+07:23:34: DEBUG [UserDao.py:46] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+07:23:34: DEBUG [UserDao.py:46] User [idUser: 2 - username: 1315490977 - password: 123456 - names: Gabriel - lastName: Auz]
+07:23:34: DEBUG [UserDao.py:47] Getting Users Succesfully
+07:23:34: DEBUG [CursorPool.py:24] Commit running
+07:23:34: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fb6c1a95180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:27:56: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f7d93260e80>
+07:27:56: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f7d912e7180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:27:56: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f7d931f8040; closed: 0>
+07:27:56: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: column "iduser" does not exist
+LINE 1: ...89123',names='Gabriel Alfredo',lastname='Auz' WHERE idUser=2
+                                                               ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:27:56: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f7d912e7180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:27:56: ERROR [UserDao.py:31] Error happened while updating user: column "iduser" does not exist
+LINE 1: ...89123',names='Gabriel Alfredo',lastname='Auz' WHERE idUser=2
+                                                               ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:27:56: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f7d912e7180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:27:56: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f7d931f8040; closed: 0>
+07:27:56: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+07:27:56: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 123456 - names: Gabriel - lastName: Auz]
+07:27:56: DEBUG [UserDao.py:49] Getting Users Succesfully
+07:27:56: DEBUG [CursorPool.py:24] Commit running
+07:27:56: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f7d912e7180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:43:30: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f035acd6e80>
+07:43:30: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0358d5e180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:43:30: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f035ac6f040; closed: 0>
+07:43:30: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: column "iduser" does not exist
+LINE 1: ...89123',names='Gabriel Alfredo',lastname='Auz' WHERE idUser=2
+                                                               ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:43:30: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0358d5e180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:43:30: ERROR [UserDao.py:31] Error happened while updating user: column "iduser" does not exist
+LINE 1: ...89123',names='Gabriel Alfredo',lastname='Auz' WHERE idUser=2
+                                                               ^
+HINT:  Perhaps you meant to reference the column "users.idUser".
+
+07:43:30: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0358d5e180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:43:30: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f035ac6f040; closed: 0>
+07:43:30: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+07:43:30: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 123456 - names: Gabriel - lastName: Auz]
+07:43:30: DEBUG [UserDao.py:49] Getting Users Succesfully
+07:43:30: DEBUG [CursorPool.py:24] Commit running
+07:43:30: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0358d5e180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:43:58: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc1f0e78e80>
+07:43:58: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc1eeeff180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:43:58: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc1f0e10040; closed: 0>
+07:43:58: DEBUG [UserDao.py:28] User updated: User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel Alfredo - lastName: Auz]
+07:43:58: DEBUG [CursorPool.py:24] Commit running
+07:43:58: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc1eeeff180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:43:58: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc1eeeff180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:43:58: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc1f0e10040; closed: 0>
+07:43:58: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+07:43:58: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel Alfredo - lastName: Auz]
+07:43:58: DEBUG [UserDao.py:49] Getting Users Succesfully
+07:43:58: DEBUG [CursorPool.py:24] Commit running
+07:43:58: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc1eeeff180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+08:57:38: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f8a4d973e80>
+08:57:38: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8a4b9fa180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+08:57:38: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8a4d90b040; closed: 0>
+08:57:38: DEBUG [UserDao.py:28] User updated: User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+08:57:38: DEBUG [CursorPool.py:24] Commit running
+08:57:38: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8a4b9fa180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+08:57:38: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8a4b9fa180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+08:57:38: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8a4d90b040; closed: 0>
+08:57:38: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+08:57:38: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+08:57:38: DEBUG [UserDao.py:49] Getting Users Succesfully
+08:57:38: DEBUG [CursorPool.py:24] Commit running
+08:57:38: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8a4b9fa180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+08:59:49: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f8a7cb7be80>
+08:59:49: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8a7ac03180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+08:59:49: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8a7cb14040; closed: 0>
+08:59:49: DEBUG [UserDao.py:60] User registred: User [idUser: None - username: 9999999999 - password: 9999999999 - names: User - lastName: Test]
+08:59:49: DEBUG [CursorPool.py:24] Commit running
+08:59:49: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8a7ac03180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+08:59:49: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8a7ac03180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+08:59:49: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8a7cb14040; closed: 0>
+08:59:49: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+08:59:49: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+08:59:49: DEBUG [UserDao.py:48] User [idUser: 3 - username: 9999999999 - password: 9999999999 - names: User - lastName: Test]
+08:59:49: DEBUG [UserDao.py:49] Getting Users Succesfully
+08:59:49: DEBUG [CursorPool.py:24] Commit running
+08:59:49: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8a7ac03180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:00:24: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f24a1c0fe80>
+09:00:24: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f249fc96180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:00:24: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f24a1ba7040; closed: 0>
+09:00:24: DEBUG [UserDao.py:17] User deleted: User [idUser: 3 - username: 9999999999 - password: 9999999999 - names: User - lastName: Test]
+09:00:24: DEBUG [CursorPool.py:24] Commit running
+09:00:24: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f249fc96180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:00:24: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f249fc96180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:00:24: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f24a1ba7040; closed: 0>
+09:00:24: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 123456 - names: Luis - lastName: Auz]
+09:00:24: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+09:00:24: DEBUG [UserDao.py:49] Getting Users Succesfully
+09:00:24: DEBUG [CursorPool.py:24] Commit running
+09:00:24: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f249fc96180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:13:36: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f31349397c0>
+09:13:36: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f313492c180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:13:36: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f3134947040; closed: 0>
+09:13:36: DEBUG [PlaceToTravelDao.py:46] Place: id1 - namePlace: San José
+09:13:36: DEBUG [PlaceToTravelDao.py:46] Place: id2 - namePlace: Alajuela
+09:13:36: DEBUG [PlaceToTravelDao.py:46] Place: id3 - namePlace: Heredia
+09:13:36: DEBUG [PlaceToTravelDao.py:46] Place: id4 - namePlace: Cartago
+09:13:36: DEBUG [PlaceToTravelDao.py:46] Place: id5 - namePlace: San Carlos
+09:13:36: DEBUG [PlaceToTravelDao.py:46] Place: id6 - namePlace: Puntarenas
+09:13:36: DEBUG [PlaceToTravelDao.py:46] Place: id7 - namePlace: Limón
+09:13:36: DEBUG [PlaceToTravelDao.py:47] Getting Users Succesfully
+09:13:36: DEBUG [CursorPool.py:24] Commit running
+09:13:36: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f313492c180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:13:55: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f09563fd7c0>
+09:13:55: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f09563f1180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:13:55: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f095640c040; closed: 0>
+09:13:55: DEBUG [PlaceToTravelDao.py:46] Place: id: 1 - namePlace: San José
+09:13:55: DEBUG [PlaceToTravelDao.py:46] Place: id: 2 - namePlace: Alajuela
+09:13:55: DEBUG [PlaceToTravelDao.py:46] Place: id: 3 - namePlace: Heredia
+09:13:55: DEBUG [PlaceToTravelDao.py:46] Place: id: 4 - namePlace: Cartago
+09:13:55: DEBUG [PlaceToTravelDao.py:46] Place: id: 5 - namePlace: San Carlos
+09:13:55: DEBUG [PlaceToTravelDao.py:46] Place: id: 6 - namePlace: Puntarenas
+09:13:55: DEBUG [PlaceToTravelDao.py:46] Place: id: 7 - namePlace: Limón
+09:13:55: DEBUG [PlaceToTravelDao.py:47] Getting Users Succesfully
+09:13:55: DEBUG [CursorPool.py:24] Commit running
+09:13:55: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f09563f1180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:20:26: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f8641d747c0>
+09:20:26: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8641d69180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:20:26: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8641d7a130; closed: 0>
+09:20:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 1 - namePlace: San José
+09:20:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 2 - namePlace: Alajuela
+09:20:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 3 - namePlace: Heredia
+09:20:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 4 - namePlace: Cartago
+09:20:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 5 - namePlace: San Carlos
+09:20:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 6 - namePlace: Puntarenas
+09:20:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 7 - namePlace: Limón
+09:20:26: DEBUG [PlaceToTravelDao.py:47] Getting Users Succesfully
+09:20:26: DEBUG [CursorPool.py:24] Commit running
+09:20:26: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8641d69180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:20:41: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f52920717c0>
+09:20:41: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5292063180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:20:41: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f529207e040; closed: 0>
+09:20:41: DEBUG [PlaceToTravelDao.py:28] Place updated: Place: id: 7 - namePlace: Limón Ojito
+09:20:41: DEBUG [CursorPool.py:24] Commit running
+09:20:41: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5292063180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:20:41: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5292063180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:20:41: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f529207e040; closed: 0>
+09:20:41: DEBUG [PlaceToTravelDao.py:46] Place: id: 1 - namePlace: San José
+09:20:41: DEBUG [PlaceToTravelDao.py:46] Place: id: 2 - namePlace: Alajuela
+09:20:41: DEBUG [PlaceToTravelDao.py:46] Place: id: 3 - namePlace: Heredia
+09:20:41: DEBUG [PlaceToTravelDao.py:46] Place: id: 4 - namePlace: Cartago
+09:20:41: DEBUG [PlaceToTravelDao.py:46] Place: id: 5 - namePlace: San Carlos
+09:20:41: DEBUG [PlaceToTravelDao.py:46] Place: id: 6 - namePlace: Puntarenas
+09:20:41: DEBUG [PlaceToTravelDao.py:46] Place: id: 7 - namePlace: Limón Ojito
+09:20:41: DEBUG [PlaceToTravelDao.py:47] Getting Users Succesfully
+09:20:41: DEBUG [CursorPool.py:24] Commit running
+09:20:41: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5292063180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:21:32: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f5e57fd5820>
+09:21:32: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5e57fc8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:21:32: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f5e59eda040; closed: 0>
+09:21:32: DEBUG [PlaceToTravelDao.py:28] Place updated: Place: id: 7 - namePlace: Limón
+09:21:32: DEBUG [CursorPool.py:24] Commit running
+09:21:32: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5e57fc8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:21:32: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5e57fc8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:21:32: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f5e59eda040; closed: 0>
+09:21:32: DEBUG [PlaceToTravelDao.py:58] Place inserted: Testing Place
+09:21:32: DEBUG [CursorPool.py:24] Commit running
+09:21:32: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5e57fc8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:21:32: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5e57fc8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:21:32: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f5e59eda040; closed: 0>
+09:21:32: DEBUG [PlaceToTravelDao.py:46] Place: id: 1 - namePlace: San José
+09:21:32: DEBUG [PlaceToTravelDao.py:46] Place: id: 2 - namePlace: Alajuela
+09:21:32: DEBUG [PlaceToTravelDao.py:46] Place: id: 3 - namePlace: Heredia
+09:21:32: DEBUG [PlaceToTravelDao.py:46] Place: id: 4 - namePlace: Cartago
+09:21:32: DEBUG [PlaceToTravelDao.py:46] Place: id: 5 - namePlace: San Carlos
+09:21:32: DEBUG [PlaceToTravelDao.py:46] Place: id: 6 - namePlace: Puntarenas
+09:21:32: DEBUG [PlaceToTravelDao.py:46] Place: id: 7 - namePlace: Limón
+09:21:32: DEBUG [PlaceToTravelDao.py:46] Place: id: 8 - namePlace: Testing Place
+09:21:32: DEBUG [PlaceToTravelDao.py:47] Getting Users Succesfully
+09:21:32: DEBUG [CursorPool.py:24] Commit running
+09:21:32: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5e57fc8180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:22:01: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f45eda76820>
+09:22:01: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f45eda68180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:22:01: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f45ef97a040; closed: 0>
+09:22:01: DEBUG [PlaceToTravelDao.py:17] Place deleted: Place: id: 8 - namePlace: Testing Place
+09:22:01: DEBUG [CursorPool.py:24] Commit running
+09:22:01: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f45eda68180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:22:01: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f45eda68180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+09:22:01: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f45ef97a040; closed: 0>
+09:22:01: DEBUG [PlaceToTravelDao.py:46] Place: id: 1 - namePlace: San José
+09:22:01: DEBUG [PlaceToTravelDao.py:46] Place: id: 2 - namePlace: Alajuela
+09:22:01: DEBUG [PlaceToTravelDao.py:46] Place: id: 3 - namePlace: Heredia
+09:22:01: DEBUG [PlaceToTravelDao.py:46] Place: id: 4 - namePlace: Cartago
+09:22:01: DEBUG [PlaceToTravelDao.py:46] Place: id: 5 - namePlace: San Carlos
+09:22:01: DEBUG [PlaceToTravelDao.py:46] Place: id: 6 - namePlace: Puntarenas
+09:22:01: DEBUG [PlaceToTravelDao.py:46] Place: id: 7 - namePlace: Limón
+09:22:01: DEBUG [PlaceToTravelDao.py:47] Getting Users Succesfully
+09:22:01: DEBUG [CursorPool.py:24] Commit running
+09:22:01: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f45eda68180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:24:16: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fedef9a41c0>
+05:24:16: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fededae5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:24:16: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fedef9f6040; closed: 0>
+05:24:16: DEBUG [UserDao.py:60] User registred: User [idUser: None - username: 1315490969 - password: 12345 - names: Luis - lastName: Auz]
+05:24:16: DEBUG [CursorPool.py:24] Commit running
+05:24:16: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fededae5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:24:16: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fededae5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:24:16: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fedef9f6040; closed: 0>
+05:24:16: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 12345 - names: Luis - lastName: Auz]
+05:24:16: DEBUG [UserDao.py:49] Getting Users Succesfully
+05:24:16: DEBUG [CursorPool.py:24] Commit running
+05:24:16: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fededae5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:25:00: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fee478b41c0>
+05:25:00: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fee459f5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:25:00: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fee47906040; closed: 0>
+05:25:00: DEBUG [UserDao.py:60] User registred: User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+05:25:00: DEBUG [CursorPool.py:24] Commit running
+05:25:00: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fee459f5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:25:00: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fee459f5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:25:00: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fee47906040; closed: 0>
+05:25:00: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 12345 - names: Luis - lastName: Auz]
+05:25:00: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+05:25:00: DEBUG [UserDao.py:49] Getting Users Succesfully
+05:25:00: DEBUG [CursorPool.py:24] Commit running
+05:25:00: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fee459f5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ff47531d730>
+05:27:26: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff477222040; closed: 0>
+05:27:26: DEBUG [PlaceToTravelDao.py:58] Place inserted: Alajuela
+05:27:26: DEBUG [CursorPool.py:24] Commit running
+05:27:26: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff477222040; closed: 0>
+05:27:26: DEBUG [PlaceToTravelDao.py:58] Place inserted: Heredia
+05:27:26: DEBUG [CursorPool.py:24] Commit running
+05:27:26: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff477222040; closed: 0>
+05:27:26: DEBUG [PlaceToTravelDao.py:58] Place inserted: Cartago
+05:27:26: DEBUG [CursorPool.py:24] Commit running
+05:27:26: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff477222040; closed: 0>
+05:27:26: DEBUG [PlaceToTravelDao.py:58] Place inserted: San Carlos
+05:27:26: DEBUG [CursorPool.py:24] Commit running
+05:27:26: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff477222040; closed: 0>
+05:27:26: DEBUG [PlaceToTravelDao.py:58] Place inserted: Puntarenas
+05:27:26: DEBUG [CursorPool.py:24] Commit running
+05:27:26: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff477222040; closed: 0>
+05:27:26: DEBUG [PlaceToTravelDao.py:58] Place inserted: Limón
+05:27:26: DEBUG [CursorPool.py:24] Commit running
+05:27:26: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:27:26: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ff477222040; closed: 0>
+05:27:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 1 - namePlace: Alajuela
+05:27:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 2 - namePlace: Heredia
+05:27:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 3 - namePlace: Cartago
+05:27:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 4 - namePlace: San Carlos
+05:27:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 5 - namePlace: Puntarenas
+05:27:26: DEBUG [PlaceToTravelDao.py:46] Place: id: 6 - namePlace: Limón
+05:27:26: DEBUG [PlaceToTravelDao.py:47] Getting Users Succesfully
+05:27:26: DEBUG [CursorPool.py:24] Commit running
+05:27:26: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff475312180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:28:08: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc711389700>
+05:28:08: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc71137d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:28:08: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc71328e040; closed: 0>
+05:28:08: DEBUG [PlaceToTravelDao.py:46] Place: id: 1 - namePlace: Alajuela
+05:28:08: DEBUG [PlaceToTravelDao.py:46] Place: id: 2 - namePlace: Heredia
+05:28:08: DEBUG [PlaceToTravelDao.py:46] Place: id: 3 - namePlace: Cartago
+05:28:08: DEBUG [PlaceToTravelDao.py:46] Place: id: 4 - namePlace: San Carlos
+05:28:08: DEBUG [PlaceToTravelDao.py:46] Place: id: 5 - namePlace: Puntarenas
+05:28:08: DEBUG [PlaceToTravelDao.py:46] Place: id: 6 - namePlace: Limón
+05:28:08: DEBUG [PlaceToTravelDao.py:47] Getting Places Succesfully
+05:28:08: DEBUG [CursorPool.py:24] Commit running
+05:28:08: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc71137d180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:52:02: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fd1a2636ca0>
+10:52:02: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fd1a06d2180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:52:02: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fd1a25eb040; closed: 0>
+10:52:02: DEBUG [Login.py:28] None
+10:52:02: DEBUG [CursorPool.py:24] Commit running
+10:52:02: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fd1a06d2180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:52:37: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f6de3328ca0>
+10:52:37: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f6de13c4180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:52:37: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f6de32dd040; closed: 0>
+10:52:37: DEBUG [Login.py:28] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+10:52:37: DEBUG [CursorPool.py:24] Commit running
+10:52:37: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f6de13c4180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:54:13: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fa735ebaca0>
+10:54:13: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fa733f56180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+10:54:13: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fa735e6f040; closed: 0>
+10:54:13: DEBUG [Login.py:28] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+10:54:13: DEBUG [Login.py:29] <class 'tuple'>
+10:54:13: DEBUG [CursorPool.py:24] Commit running
+10:54:13: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fa733f56180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:06:33: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f475c26a550>
+11:06:33: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f475a201180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:06:33: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f475a21e040; closed: 0>
+11:06:33: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: validationUsername() takes 1 positional argument but 2 were given
+11:06:33: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f475a201180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:06:33: ERROR [Login.py:50] Error happened while login user (1315490969): validationUsername() takes 1 positional argument but 2 were given
+11:06:33: DEBUG [Login.py:58] The user 1315490969 is a normal user
+11:08:17: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fabb9be4550>
+11:08:17: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fabb7b7b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:08:17: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fabb9a92040; closed: 0>
+11:08:17: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+11:08:17: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: validationUsername() takes 1 positional argument but 2 were given
+11:08:17: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fabb7b7b180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+11:08:17: ERROR [Login.py:51] Error happened while login user 1315490969: validationUsername() takes 1 positional argument but 2 were given
+11:08:17: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:02:06: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f47fcaf47f0>
+07:02:06: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f47fabac180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:02:06: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f47fcac4040; closed: 0>
+07:02:06: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:02:06: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: validationUsername() takes 1 positional argument but 2 were given
+07:02:06: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f47fabac180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:02:06: ERROR [Login.py:51] Error happened while login user 1315490969: validationUsername() takes 1 positional argument but 2 were given
+07:02:06: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:04:25: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f5ce89277f0>
+07:04:25: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5ce69df180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:04:25: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f5ce88f7040; closed: 0>
+07:04:25: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:04:25: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:04:25: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5ce69df180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:04:25: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:04:25: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:04:58: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc526e5f160>
+07:04:58: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc524fa0180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:04:58: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc526eb1040; closed: 0>
+07:04:58: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 12345 - names: Luis - lastName: Auz]
+07:04:58: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+07:04:58: DEBUG [UserDao.py:49] Getting Users Succesfully
+07:04:58: DEBUG [CursorPool.py:24] Commit running
+07:04:58: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc524fa0180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:05:15: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f3c294997f0>
+07:05:15: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f3c27551180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:05:15: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f3c29469040; closed: 0>
+07:05:15: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:05:15: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:05:15: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f3c27551180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:05:15: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:05:15: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:06:46: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc17c4267f0>
+07:06:46: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc17a4de180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:06:46: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc17c3f6040; closed: 0>
+07:06:46: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:06:46: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:06:46: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc17a4de180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:06:46: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:06:46: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:07:03: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f65f5faa7f0>
+07:07:03: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f65f4062180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:07:03: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f65f5f7a040; closed: 0>
+07:07:03: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:07:03: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:07:03: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f65f4062180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:07:03: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:07:03: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:08:18: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc825f7a7f0>
+07:08:18: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc824032180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:18: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fc825f4a040; closed: 0>
+07:08:18: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:08:18: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'bool' object is not callable
+07:08:18: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc824032180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:18: ERROR [Login.py:51] Error happened while login user 1315490969: 'bool' object is not callable
+07:08:18: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:08:35: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fb40a7db7f0>
+07:08:35: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fb408893180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:35: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fb40a7ab040; closed: 0>
+07:08:35: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:08:35: DEBUG [CursorPool.py:24] Commit running
+07:08:35: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fb408893180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:35: DEBUG [Login.py:59] The user 1315490969 is a normal user
+07:08:57: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f74053f97f0>
+07:08:57: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f74034b1180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:57: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f74053c9040; closed: 0>
+07:08:57: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:08:57: DEBUG [Login.py:48] User [idUser: 1 - username: None - password: None - names: None - lastName: None]
+07:08:57: DEBUG [CursorPool.py:24] Commit running
+07:08:57: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f74034b1180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:08:57: DEBUG [Login.py:60] The user 1315490969 is a normal user
+07:10:12: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f537602d7f0>
+07:10:12: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f53740e5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:10:12: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f5375ffd040; closed: 0>
+07:10:12: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:10:12: ERROR [CursorPool.py:21] Error happened while executing query. We do rollback. Value Exception: 'int' object is not iterable
+07:10:12: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f53740e5180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:10:12: ERROR [Login.py:55] Error happened while login user 1315490969: 'int' object is not iterable
+07:10:12: DEBUG [Login.py:63] The user 1315490969 is a normal user
+07:10:40: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f3152a847f0>
+07:10:40: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f3150b3c180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:10:40: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f3152a54040; closed: 0>
+07:10:40: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:10:40: DEBUG [Login.py:51] User [idUser: 1 - username: None - password: None - names: None - lastName: None]
+07:10:40: DEBUG [CursorPool.py:24] Commit running
+07:10:40: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f3150b3c180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:10:40: DEBUG [Login.py:63] The user 1315490969 is a normal user
+07:19:57: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f6c6f0487f0>
+07:19:57: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f6c6d100180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:19:57: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f6c6f018040; closed: 0>
+07:19:57: DEBUG [Login.py:42] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+07:19:57: DEBUG [CursorPool.py:24] Commit running
+07:19:57: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f6c6d100180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+07:19:57: DEBUG [Login.py:64] The user 1315490969 is Admin
+02:55:53: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f8b28b5d250>
+02:55:53: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8b26c9e180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+02:55:53: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f8b28baf040; closed: 0>
+02:55:53: DEBUG [UserDao.py:48] User [idUser: 1 - username: 1315490969 - password: 12345 - names: Luis - lastName: Auz]
+02:55:53: DEBUG [UserDao.py:48] User [idUser: 2 - username: 1315490977 - password: 789123 - names: Gabriel - lastName: Auz]
+02:55:53: DEBUG [UserDao.py:49] Getting Users Succesfully
+02:55:53: DEBUG [CursorPool.py:24] Commit running
+02:55:53: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8b26c9e180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:09:11: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f044100eeb0>
+05:09:11: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f045213e540; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:09:11: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f04506947c0; closed: 0>
+05:09:11: DEBUG [Login.py:42] None
+05:09:11: ERROR [Login.py:26] Username is not correct
+05:09:11: DEBUG [CursorPool.py:24] Commit running
+05:09:11: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f045213e540; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+05:09:25: DEBUG [Login.py:65] The user 131 is a normal user
+06:08:48: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f6521cac310>
+06:08:48: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f651fc44180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+06:08:48: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f6521b5b040; closed: 0>
+06:08:48: DEBUG [Login.py:48] (1, '1315490969', '12345', 'Luis', 'Auz', True)
+06:08:48: DEBUG [Login.py:36] User 1315490969 logged succesfully
+06:08:48: DEBUG [CursorPool.py:24] Commit running
+06:08:48: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f651fc44180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:05:16: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f93ed50a8e0>
+12:05:16: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f93eb5b1400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:05:16: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f93eb4fc040; closed: 0>
+12:05:16: DEBUG [CursorPool.py:24] Commit running
+12:05:16: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f93eb5b1400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:10:59: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f72fed085e0>
+12:10:59: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f72fed09180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:10:59: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7f7300c9c040; closed: 0>
+12:10:59: DEBUG [TerminalDao.py:97] Terminal [idTerminal: 1 - name: Terminal One - place: 1 - number: 1]
+12:10:59: DEBUG [TerminalDao.py:97] Terminal [idTerminal: 2 - name: Terminal Testing - place: 1 - number: 2]
+12:10:59: DEBUG [TerminalDao.py:97] Terminal [idTerminal: 3 - name: Terminal #1 Testing Place Two - place: 2 - number: 2]
+12:10:59: DEBUG [TerminalDao.py:97] Terminal [idTerminal: 4 - name: Terminal #2 Testing Place Two - place: 2 - number: 1]
+12:10:59: DEBUG [TerminalDao.py:98] Getting Terminals Succesfully
+12:10:59: DEBUG [CursorPool.py:24] Commit running
+12:10:59: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f72fed09180; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:24: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fbe75cb73d0>
+12:11:24: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fbe75cab400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:24: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7fbe77ca3040; closed: 0>
+12:11:24: DEBUG [CursorPool.py:24] Commit running
+12:11:24: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fbe75cab400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:54: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ffa19e4a3a0>
+12:11:54: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ffa19e3d400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:54: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ffa1be35040; closed: 0>
+12:11:54: DEBUG [BusDao.py:17] Bus LMN798 registered succesfully
+12:11:54: DEBUG [CursorPool.py:24] Commit running
+12:11:54: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ffa19e3d400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:54: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ffa19e3d400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>
+12:11:54: DEBUG [CursorPool.py:13] Connection and Cursor obtained succesfully: <cursor object at 0x7ffa1be35040; closed: 0>
+12:11:54: DEBUG [CursorPool.py:24] Commit running
+12:11:54: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ffa19e3d400; dsn: 'user=postgres password=xxx dbname=autobus_agency host=127.0.0.1 port=5432', closed: 0>

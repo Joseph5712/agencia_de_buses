@@ -1,3 +1,7 @@
 .vscode
+<<<<<<< HEAD
 .__pycache__/
 *.pyc
+=======
+__pycache__
+>>>>>>> dev-refactoring
